@@ -164,15 +164,15 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  background-color: brown;
-  font-weight: 400; }
+  font-family: "Roboto Condensed", "Arial", sans-serif; }
 
 a {
   text-decoration: none;
   color: inherit; }
 
 .header {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: -82px; }
   .header .header__wrap {
     max-width: 1366px;
     margin: 0 auto;
@@ -184,7 +184,7 @@ a {
             justify-content: space-between;
     padding: 28px 103px; }
   .header .header__wrap a {
-    font-family: "Bebas";
+    font-family: "Bebas", "Arial", sans-serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 1px;
@@ -208,3 +208,97 @@ a {
     .header .header__wrap a {
       font-size: 20px;
       line-height: 20px; } }
+
+.description {
+  width: 100%;
+  height: 658px;
+  padding-top: 51px;
+  background-image: url("../img/bg/description/description-gradient-bg-desc.png");
+  background-size: cover; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .description {
+      background-image: url("../img/bg/description/description-gradient-bg-desc@2x.png"); } }
+  .description .description__wrap {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding-left: 103px;
+    padding-right: 103px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: right; }
+  .description .description__text {
+    width: 25.7%;
+    color: #ffffff;
+    margin-left: 99px;
+    padding-top: 111px; }
+  .description .description__text p {
+    font-family: "Bebas", "Arial", sans-serif;
+    font-size: 49px;
+    line-height: 59px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 2px; }
+  .description .description__text h1 {
+    font-size: 111px;
+    line-height: 109px;
+    width: 298px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: "Bebas", "Arial", sans-serif;
+    margin: 2px 0 0 0; }
+  .description .description__block_text_description {
+    width: 129px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    margin: -85px 0 0 -96px; }
+  .description .description__text a {
+    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 234px;
+    min-height: 61px;
+    padding: 19px 53px;
+    border: 4px solid #ffffff;
+    margin: 84px 0 0 64px; }
+    .description .description__text a:hover {
+      opacity: 0.6; }
+    .description .description__text a:active {
+      opacity: 0.8; }
+  .description .description__img {
+    margin-left: 63px; }
+  .description .description__social {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 0 23px 186px; }
+  .description .description__social a {
+    margin-bottom: 19px; }
+    .description .description__social a:hover {
+      opacity: 0.6; }
+    .description .description__social a:active {
+      opacity: 0.8; }

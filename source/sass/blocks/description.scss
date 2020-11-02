@@ -1,0 +1,94 @@
+.description {
+  width: 100%;
+  height: 658px;
+  padding-top: 51px;
+
+  background-image: url("../img/bg/description/description-gradient-bg-desc.png");
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg/description/description-gradient-bg-desc@2x.png")
+  }
+
+  .description__wrap {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding-left: 103px;
+    padding-right: 103px;
+    display: flex;
+    text-align: right;
+  }
+
+  .description__text {
+    width: 25.7%;
+    color: $auxiliary-color;
+    margin-left: 99px;
+    padding-top: 111px;
+  }
+
+  .description__text p {
+    font-family: "Bebas", "Arial", sans-serif;
+    font-size: 49px;
+    line-height: 59px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-right: 2px;
+  }
+
+  .description__text h1 {
+    font-size: 111px;
+    line-height: 109px;
+    width: 298px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: "Bebas", "Arial", sans-serif;
+    margin: 2px 0 0 0;
+  }
+
+  .description__block_text_description {
+    width: 129px;
+    font-family: $main-font;
+
+    font-size: 14px;
+    line-height: 150%;
+    margin: -85px 0 0 -96px;
+  }
+
+  .description__text a {
+    @include opacity-link;
+    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 234px;
+    min-height: 61px;
+    padding: 19px 53px;
+    border: 4px solid $auxiliary-color;
+    margin: 84px 0 0 64px;
+  }
+
+  .description__img {
+    margin-left: 63px;
+  }
+
+  .description__social {
+    font-family: $main-font;
+    color: $auxiliary-color;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 23px 186px;
+  }
+
+  .description__social a {
+    @include opacity-link;
+    margin-bottom: 19px;
+  }
+}
