@@ -170,3 +170,41 @@ body {
 a {
   text-decoration: none;
   color: inherit; }
+
+.header {
+  width: 100%; }
+  .header .header__wrap {
+    max-width: 1366px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 28px 103px; }
+  .header .header__wrap a {
+    font-family: "Bebas";
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #ffffff; }
+  .header .header__tel:hover {
+    opacity: 0.6; }
+  .header .header__tel:active {
+    opacity: 0.8; }
+  @media (max-width: 1199px) {
+    .header .header__wrap {
+      max-width: 768px;
+      padding: 38px 45px; }
+    .header .header__wrap a {
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.6px; } }
+  @media (max-width: 767px) {
+    .header .header__wrap {
+      max-width: 480px;
+      padding: 18px 15px; }
+    .header .header__wrap a {
+      font-size: 20px;
+      line-height: 20px; } }
