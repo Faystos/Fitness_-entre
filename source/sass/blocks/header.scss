@@ -23,8 +23,11 @@
   }
 
   @media (max-width: $desktop-width) {
+    margin-bottom: -100px;
+
     .header__wrap {
-      max-width: 768px;
+      min-width: 768px;
+      max-width: 860px;
       padding: 38px 45px;
     }
 
@@ -37,6 +40,7 @@
 
   @media (max-width: $table-width) {
     .header__wrap {
+      min-width: 320px;
       max-width: 480px;
       padding: 18px 15px;
     }

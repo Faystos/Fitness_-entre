@@ -27,7 +27,12 @@
           <a href="#">Купить абонемент</a>
         </div>
         <div class="description__img">
-          <img src="./img/image/description/superman_img_desc.jpg" alt="фотография человека в фублоке Super Man" width="500" height="556">
+          <picture>
+            <source media="(max-width: 1199px)" type="image/webp" srcset="./img/image/description/superman_img_tablet.webp 1x, ./img/image/description/superman_img_tablet@2x.webp 2x">
+            <source  media="(max-width: 1199px)" srcset="./img/image/description/superman_img_tablet.jpg 1x, ./img/image/description/superman_img_tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="./img/image/description/superman_img_desc.webp 1x, ./img/image/description/superman_img_desc@2x.webp 2x">
+            <img src="./img/image/description/superman_img_desc.jpg" srcset="./img/image/description/superman_img_desc@2x.jpg 2x" alt="фотография человека в фублоке Super Man" width="500" height="556">
+          </picture>
         </div>
         <div class="description__social">
           <a href="">fb</a>

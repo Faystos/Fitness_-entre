@@ -194,15 +194,19 @@ a {
   .header .header__tel:active {
     opacity: 0.8; }
   @media (max-width: 1199px) {
-    .header .header__wrap {
-      max-width: 768px;
-      padding: 38px 45px; }
-    .header .header__wrap a {
-      font-size: 24px;
-      line-height: 24px;
-      letter-spacing: 0.6px; } }
+    .header {
+      margin-bottom: -100px; }
+      .header .header__wrap {
+        min-width: 768px;
+        max-width: 860px;
+        padding: 38px 45px; }
+      .header .header__wrap a {
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.6px; } }
   @media (max-width: 767px) {
     .header .header__wrap {
+      min-width: 320px;
       max-width: 480px;
       padding: 18px 15px; }
     .header .header__wrap a {
@@ -220,18 +224,22 @@ a {
       background-image: url("../img/bg/description/description-gradient-bg-desc@2x.png"); } }
   .description .description__wrap {
     max-width: 1366px;
+    min-height: 556px;
     margin: 0 auto;
     padding-left: 103px;
     padding-right: 103px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: right; }
   .description .description__text {
-    width: 25.7%;
+    width: 297px;
     color: #ffffff;
-    margin-left: 99px;
-    padding-top: 111px; }
+    padding-top: 111px;
+    margin: 0 5px 0 99px; }
   .description .description__text p {
     font-family: "Bebas", "Arial", sans-serif;
     font-size: 49px;
@@ -278,7 +286,11 @@ a {
     .description .description__text a:active {
       opacity: 0.8; }
   .description .description__img {
-    margin-left: 63px; }
+    margin: 0 147px 0 20px;
+    min-width: 480px;
+    min-height: 533px;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
   .description .description__social {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     color: #ffffff;
@@ -295,10 +307,76 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin: 0 0 23px 186px; }
+    margin: 0 0 23px 0; }
   .description .description__social a {
     margin-bottom: 19px; }
     .description .description__social a:hover {
       opacity: 0.6; }
     .description .description__social a:active {
       opacity: 0.8; }
+  @media (max-width: 1199px) {
+    .description {
+      padding-top: 82px;
+      height: 554px; }
+      .description .description__wrap {
+        min-width: 768px;
+        max-width: 860px;
+        padding-left: 45px;
+        padding-right: 45px; }
+      .description .description__text {
+        width: 326px;
+        margin: 0;
+        padding-top: 50px; }
+      .description .description__text p {
+        font-size: 34px;
+        line-height: 41px; }
+      .description .description__text h1 {
+        font-size: 86px;
+        line-height: 86px;
+        margin: -2px 0 0 25px; }
+      .description .description__block_text_description {
+        margin: -75px 0 0 -16px; }
+      .description .description__text a {
+        width: 187px;
+        min-height: 57px;
+        padding: 19.5px 5px;
+        margin: 57px 0 0 139px; }
+      .description .description__img {
+        min-width: 324px;
+        min-height: 390px;
+        margin: 0;
+        -ms-flex-item-align: start;
+            align-self: start; }
+        .description .description__img img {
+          width: 324px;
+          height: 390px; }
+      .description .description__social {
+        display: none; } }
+  @media (max-width: 767px) {
+    .description {
+      height: 535px; }
+      .description .description__wrap {
+        min-width: 320px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px; }
+      .description .description__text {
+        max-width: 290px;
+        margin: 0 auto;
+        padding-top: 71px; }
+      .description .description__text p {
+        font-size: 28px;
+        line-height: 34px;
+        margin: 0; }
+      .description .description__text h1 {
+        font-size: 78px;
+        line-height: 78px;
+        margin: 4px 0 0 -9px; }
+      .description .description__block_text_description {
+        margin: -70px 0 0 -16px; }
+      .description .description__text a {
+        width: 100%;
+        padding: 20.5px 5px;
+        margin: 54px auto 0 auto; }
+      .description .description__img {
+        display: none; } }
