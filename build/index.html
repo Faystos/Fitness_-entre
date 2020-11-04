@@ -7,6 +7,24 @@
   <title>Фитнес центер</title>
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="visually-hidden">
+    <defs>
+      <linearGradient id="paint0_linear" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#ED0233"></stop>
+        <stop offset="1" stop-color="#003EB7"></stop>
+      </linearGradient>
+      <linearGradient id="paint1_linear" x1="14" y1="49.52" x2="54.1858" y2="9.18415" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#003D85"></stop>
+        <stop offset="0.885417" stop-color="#B80027"></stop>
+      </linearGradient>
+    </defs>
+    <symbol id="icon_trainers_video" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear)" stroke-opacity="0.2" stroke-width="2"></circle>
+      <circle cx="50" cy="50" r="36" fill="url(#paint1_linear)"></circle>
+      <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white"></path>
+    </symbol>
+  </svg>
+
   <header class="header">
     <div class="header__wrap">
       <a class="header__logo">Supergym</a>
@@ -41,7 +59,35 @@
         </div>
       </div>
     </section>
+    <section class="trainers">
+      <div class="trainers__wrap">
+        <div class="trainers__block_text">
+          <h2>Тренажерный зал</h2>
+          <p>Просторный зал площадью 900 кв/м</p>
+          <div class="trainers__block_description">
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+        </div>
+        <div class="trainers__block_img">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/image/trainers/trainers_img_mobile.webp 1x, ./img/image/trainers/trainers_img_mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/image/trainers/trainers_img_tablet.webp 1x, ./img/image/trainers/trainers_img_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/image/trainers/trainers_img_desc.webp 1x, ./img/image/trainers/trainers_img_desc@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="./img/image/trainers/trainers_img_mobile.jpg 1x, ./img/image/trainers/trainers_img_mobile@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="./img/image/trainers/trainers_img_tablet.jpg 1x, ./img/image/trainers/trainers_img_tablet@2x.jpg 2x">
+            <img src="./img/image/trainers/trainers_img_desc.jpg" srcset="./img/image/trainers/trainers_img_desc@2x.jpg 2x" alt="изображение тренажерного зала" width="660" height="401">
+          </picture>
+        </div>
+        <div class="trainers__block_video">
+          <video width="364" height="228" poster="./img/image/trainers/trainers_img_video.png" tabindex="0"></video>
+          <button type="button" class="trainers__video_play"><svg width="100" height="100" class="trainers__play_icon"><use xlink:href="#icon_trainers_video"></use></svg></button>
+        </div>
+      </div>
+    </section>
   </main>
 
 </body>
 </html>
+
+
