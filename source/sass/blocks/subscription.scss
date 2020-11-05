@@ -1,13 +1,41 @@
 .subscription {
   color: $main-color;
   padding-top: 116px;
-  padding-bottom: 500px;
+  padding-bottom: 100px;
   text-align: center;
+  background-color: rgba(248, 249, 252, 1);
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 250px;
+    height: 330px;
+    position: absolute;
+    bottom: -71px;
+    right: 0;
+
+    background-image: url("../img/bg/subscription/subscription_bg_desc.png");
+    background-position: 100% 51.99%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg/subscription/subscription_bg_desc@2x.png");
+      background-size: 115%;
+    }
+  }
 
 
+
+  // background-image: url("../img/bg/subscription/subscription_bg_desc.png");
+  // background-position: 100% 66.99%;
+  // background-repeat: no-repeat;
+
+  // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  //   background-image: url("../img/bg/subscription/subscription_bg_desc@2x.png");
+  //   background-size: 21%;
+  // }
 
   .subscription__wrap {
-    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -48,14 +76,10 @@
   }
 
   .subscription__tab_control {
-
     &--active {
       border-bottom: 2px solid #D10A42;
     }
   }
-
-
-
 
   .subscription__tabs {
     display: flex;
@@ -70,6 +94,13 @@
     margin: 0 20px 20px 20px;
     padding: 5px;
     position: relative;
+    background-color: $auxiliary-color;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+
+    &:hover {
+      box-shadow: 0 0 5px 2px #000000;
+    }
 
     h3 {
       font-family: "Roboto Condensed Bold", "Aria", sans-serif;
@@ -92,7 +123,8 @@
       font-family: "Roboto Condensed Bold", "Aria", sans-serif;
       font-size: 60px;
       line-height: 150%;
-      z-index: 50;
+      z-index: 2;
+      position: relative;
     }
 
     span:last-of-type {
@@ -105,7 +137,7 @@
       bottom: 154px;
       left: 50%;
       transform: translateX(-62%);
-      z-index: -1;
+      z-index: 1;
     }
 
     &--active {
@@ -136,5 +168,69 @@
     margin-top: 34px;
     border: 2px solid #102654;
     padding: 24px 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-top: 46px;
+    padding-bottom: 118px;
+
+    &::before {
+      width: 345px;
+      bottom: 1px;
+
+      background-image: url("../../img/bg/subscription/subscription_bg_tablet.png");
+      background-size: 100%;
+      background-position: 100% 38.1%;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../../img/bg/subscription/subscription_bg_tablet@2x.png");
+      }
+
+    }
+
+
+
+    .subscription__wrap {
+      padding-left: 81px;
+      padding-right: 81px;
+    }
+
+    .subscription__title {
+      h2 {
+        font-size: 42px;
+        letter-spacing: 2px;
+      }
+    }
+
+    .subscription__tabs_control {
+      margin-top: 29px;
+
+      &::before {
+        width: 333px;
+        bottom: -12px;
+      }
+
+      span {
+        font-size: 18px;
+        margin: 0 25px
+      }
+    }
+
+    .subscription__tabs {
+      margin-top: 57px;
+    }
+
+    .subscription__tab {
+      width: 442px;
+      min-height: 448px;
+      margin-bottom: 39px;
+
+      &:not(.subscription__tab--active) span:last-of-type {
+        bottom: 162px;
+      }
+    }
+
+
+
   }
 }

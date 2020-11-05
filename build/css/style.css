@@ -551,10 +551,25 @@ a {
 .subscription {
   color: #102654;
   padding-top: 116px;
-  padding-bottom: 500px;
-  text-align: center; }
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: #f8f9fc;
+  position: relative; }
+  .subscription::before {
+    content: '';
+    width: 250px;
+    height: 330px;
+    position: absolute;
+    bottom: -71px;
+    right: 0;
+    background-image: url("../img/bg/subscription/subscription_bg_desc.png");
+    background-position: 100% 51.99%;
+    background-repeat: no-repeat; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .subscription::before {
+        background-image: url("../img/bg/subscription/subscription_bg_desc@2x.png");
+        background-size: 115%; } }
   .subscription .subscription__wrap {
-    max-width: 1200px;
     margin: 0 auto; }
   .subscription .subscription__title h2 {
     font-family: "Bebas", "Aria", sans-serif;
@@ -599,7 +614,16 @@ a {
     min-height: 448px;
     margin: 0 20px 20px 20px;
     padding: 5px;
-    position: relative; }
+    position: relative;
+    background-color: #ffffff;
+    cursor: pointer;
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    transition: -webkit-box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s, -webkit-box-shadow 0.5s; }
+    .subscription .subscription__tab:hover {
+      -webkit-box-shadow: 0 0 5px 2px #000000;
+              box-shadow: 0 0 5px 2px #000000; }
     .subscription .subscription__tab h3 {
       font-family: "Roboto Condensed Bold", "Aria", sans-serif;
       font-size: 26px;
@@ -617,7 +641,8 @@ a {
       font-family: "Roboto Condensed Bold", "Aria", sans-serif;
       font-size: 60px;
       line-height: 150%;
-      z-index: 50; }
+      z-index: 2;
+      position: relative; }
     .subscription .subscription__tab span:last-of-type {
       font-size: 100px;
       line-height: 150%;
@@ -629,7 +654,7 @@ a {
       left: 50%;
       -webkit-transform: translateX(-62%);
               transform: translateX(-62%);
-      z-index: -1; }
+      z-index: 1; }
     .subscription .subscription__tab--active {
       border: 7px solid transparent;
       -o-border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
@@ -657,3 +682,39 @@ a {
     margin-top: 34px;
     border: 2px solid #102654;
     padding: 24px 0; }
+  @media (max-width: 1199px) {
+    .subscription {
+      padding-top: 46px;
+      padding-bottom: 118px; }
+      .subscription::before {
+        width: 345px;
+        bottom: 1px;
+        background-image: url("../../img/bg/subscription/subscription_bg_tablet.png");
+        background-size: 100%;
+        background-position: 100% 38.1%; } }
+    @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+      .subscription::before {
+        background-image: url("../../img/bg/subscription/subscription_bg_tablet@2x.png"); } }
+  @media (max-width: 1199px) {
+      .subscription .subscription__wrap {
+        padding-left: 81px;
+        padding-right: 81px; }
+      .subscription .subscription__title h2 {
+        font-size: 42px;
+        letter-spacing: 2px; }
+      .subscription .subscription__tabs_control {
+        margin-top: 29px; }
+        .subscription .subscription__tabs_control::before {
+          width: 333px;
+          bottom: -12px; }
+        .subscription .subscription__tabs_control span {
+          font-size: 18px;
+          margin: 0 25px; }
+      .subscription .subscription__tabs {
+        margin-top: 57px; }
+      .subscription .subscription__tab {
+        width: 442px;
+        min-height: 448px;
+        margin-bottom: 39px; }
+        .subscription .subscription__tab:not(.subscription__tab--active) span:last-of-type {
+          bottom: 162px; } }
