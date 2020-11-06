@@ -1,14 +1,16 @@
 .trainers {
+  width: 100%;
   color: $main-color;
   padding-top: 120px;
   padding-bottom: 234px;
 
   .trainers__wrap {
-    max-width: 1160px;
+    max-width: 1366px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     position: relative;
+    padding: 0 103px;
   }
 
   .trainers__block_text {
@@ -31,13 +33,13 @@
   }
 
   .trainers__block_description {
-    width: 359px;
+    width: 357px;
     margin-top: 38px;
 
     p {
-      font-family: $main-font;
+      font-family: "Roboto Condensed Light", "Arial",sans-serif;
       font-size: 16px;
-      line-height: 150%;
+      line-height: 24px;
       letter-spacing: 0;
       margin: 0 0 10px 0;
     }
@@ -52,7 +54,7 @@
     width: 364px;
     height: 228px;
     position: absolute;
-    left: 37.7%;
+    left: 540px;
     bottom: -115px;
   }
 
@@ -70,18 +72,18 @@
 
   @media (max-width: $desktop-width) {
     padding-top: 54px;
+    padding-bottom: 183px;
 
     .trainers__wrap {
-      width: 100%;
       padding: 0 45px;
       display: block;
     }
 
     .trainers__block_text {
-      width: 100%;
+      width: 502px;
       margin: 0 auto;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 0;
+      padding-right: 0;
       text-align: center;
 
       h2 {
@@ -92,13 +94,9 @@
 
     .trainers__block_description {
       width: 100%;
-      margin-top: 33px;
+      margin: 33px auto 0 auto;
 
       p {
-        font-family: "Roboto Condensed Light", "Arial",sans-serif;;
-        font-size: 16px;
-        text-align: center;
-        letter-spacing: 0;
         margin: 0;
       }
 
@@ -148,6 +146,7 @@
 
     .trainers__wrap {
       padding: 0;
+
     }
 
     .trainers__block_text {
@@ -176,19 +175,19 @@
     }
 
     .trainers__block_img {
-      max-width: 460px;
-      margin: 33px auto 0 auto;
+      max-width: 390;
+      margin: 33px auto 0;
 
       img {
         width: 100%;
-
+        max-width: 390px;
         height: 313px;
       }
     }
 
     .trainers__block_video {
       width: 100%;
-      max-width: 460px;
+      max-width: 390px;
       height: 167px;
 
       position: relative;
@@ -198,14 +197,11 @@
       margin: 40px auto 0 auto;
       overflow: hidden;
 
-
       video {
         width: 100%;
         height: auto;
 
       }
     }
-
-
   }
 }
