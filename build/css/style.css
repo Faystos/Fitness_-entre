@@ -802,7 +802,7 @@ a {
     display: -ms-flexbox;
     display: flex; }
   .promo .promo__block_text {
-    width: 43%;
+    width: 43.1%;
     background-color: #ed0233;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -933,4 +933,18 @@ a {
           font-size: 10px; }
       .promo .promo__block_img img {
         width: 386px;
+        height: 292px; } }
+  @media (max-width: 767px) {
+    .promo {
+      padding-top: 70px; }
+      .promo .promo__wrap {
+        width: 290px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .promo .promo__block_text {
+        width: 100%; }
+      .promo .promo__block_img img {
+        width: 290px;
         height: 292px; } }
