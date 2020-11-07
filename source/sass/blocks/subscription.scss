@@ -7,13 +7,12 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     width: 250px;
     height: 330px;
     position: absolute;
     bottom: -71px;
     right: 0;
-
     background-image: url("../img/bg/subscription/subscription_bg_desc.png");
     background-position: 100% 51.99%;
     background-repeat: no-repeat;
@@ -23,17 +22,6 @@
       background-size: 115%;
     }
   }
-
-
-
-  // background-image: url("../img/bg/subscription/subscription_bg_desc.png");
-  // background-position: 100% 66.99%;
-  // background-repeat: no-repeat;
-
-  // @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  //   background-image: url("../img/bg/subscription/subscription_bg_desc@2x.png");
-  //   background-size: 21%;
-  // }
 
   .subscription__wrap {
     margin: 0 auto;
@@ -70,13 +58,12 @@
       margin: 0 21px;
       padding-bottom: 14px;
       cursor: pointer;
-
     }
   }
 
   .subscription__tab_control {
     &--active {
-      border-bottom: 2px solid #D10A42;
+      border-bottom: 2px solid #d10a42;
     }
   }
 
@@ -99,7 +86,7 @@
 
     &:hover {
       border: 7px solid transparent;
-      border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+      border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
       border-image-slice: 1;
 
       h3 {
@@ -139,7 +126,7 @@
     span:last-of-type {
       font-size: 100px;
       line-height: 150%;
-      color: #E8E8E8;
+      color: #e8e8e8;
       opacity: 0.48;
       margin: 0;
       position: absolute;
@@ -159,13 +146,12 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-top: 34px;
-    // margin-top: 31px;
     border: 2px solid #102654;
     padding: 24px 0;
 
     &:hover {
       border: none;
-      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
       color: $auxiliary-color;
     }
   }
@@ -208,7 +194,7 @@
 
       span {
         font-size: 18px;
-        margin: 0 25px
+        margin: 0 25px;
       }
     }
 
@@ -232,6 +218,7 @@
   }
 
   @media (max-width: $table-width) {
+    width: 100%;
     padding-top: 67px;
     padding-bottom: 37px;
 
@@ -240,8 +227,8 @@
     }
 
     .subscription__wrap {
-      width: 320px;
-      padding: 0 8.5px;
+      width: 100%;
+      padding: 0;
       margin: 0 auto;
     }
 
@@ -254,9 +241,11 @@
 
     .subscription__tabs_control {
       width: 100%;
+      max-width: 320px;
       display: flex;
       justify-content: space-between;
       margin-top: 24px;
+      padding: 0 8px;
 
       &::before {
         width: 290px;
@@ -272,21 +261,23 @@
     }
 
     .subscription__tabs {
-      width: 290px;
+      // width: 320px;
+      display: block;
+      width: 100%;
       margin-top: 35px;
       margin-left: auto;
       margin-right: auto;
     }
 
     .subscription__tab {
-      width: 100%;
+      width: 290px;
       min-height: 384px;
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 34px;
 
       &:hover {
-        h3{
+        h3 {
           margin-top: 31px;
         }
 

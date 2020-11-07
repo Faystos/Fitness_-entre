@@ -37,7 +37,7 @@
     margin-top: 38px;
 
     p {
-      font-family: "Roboto Condensed Light", "Arial",sans-serif;
+      font-family: "Roboto Condensed Light", "Arial", sans-serif;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0;
@@ -63,7 +63,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .trainers__play_icon {
@@ -132,8 +132,9 @@
       .trainers__video_play {
         width: auto;
         height: auto;
-        transform: translate(-51.5%,-50%);
+        transform: translate(-51.5%, -50%);
       }
+
       .trainers__play_icon {
         width: 73px;
         height: 73px;
@@ -146,7 +147,6 @@
 
     .trainers__wrap {
       padding: 0;
-
     }
 
     .trainers__block_text {
@@ -175,7 +175,7 @@
     }
 
     .trainers__block_img {
-      max-width: 390;
+      max-width: 390px;
       margin: 33px auto 0;
 
       img {
@@ -194,13 +194,12 @@
       transform: none;
       top: 0;
       left: 0;
-      margin: 40px auto 0 auto;
+      margin: 40px auto 0;
       overflow: hidden;
 
       video {
         width: 100%;
         height: auto;
-
       }
     }
   }

@@ -7,7 +7,7 @@
   background-size: cover;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg/description/description-gradient-bg-desc@2x.png")
+    background-image: url("../img/bg/description/description-gradient-bg-desc@2x.png");
   }
 
   .description__wrap {
@@ -182,7 +182,7 @@
 
     .description__block_text_description {
       margin: -70px 0 0 -16px;
-  }
+    }
 
     .description__text a {
       width: 100%;
@@ -193,6 +193,5 @@
     .description__img {
       display: none;
     }
-
   }
 }
