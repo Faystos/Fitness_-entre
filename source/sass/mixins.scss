@@ -5,6 +5,7 @@
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 @mixin opacity-link {
@@ -15,4 +16,9 @@
   &:active {
     opacity: 0.8;
   }
+}
+
+@mixin hide-font {
+  font-size: 0;
+  line-height: 0;
 }

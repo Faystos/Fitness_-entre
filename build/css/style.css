@@ -449,6 +449,7 @@ a {
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -664,6 +665,7 @@ a {
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
     font-family: "Roboto Condensed Bold", "Aria", sans-serif;
     min-width: 208px;
     font-size: 12px;
@@ -912,7 +914,7 @@ a {
         width: 56px;
         font-size: 12px;
         line-height: 22px;
-        padding-bottom: 0px; }
+        padding-bottom: 0; }
       .promo .promo__time_text span {
         font-size: 24px;
         line-height: 28px; }
@@ -921,7 +923,6 @@ a {
         margin-left: 45px; }
         .promo .promo__description span {
           font-size: 12px;
-          line-height: 18;
           line-height: 0; }
       .promo .promo__link {
         margin-top: 32px;
@@ -948,3 +949,181 @@ a {
       .promo .promo__block_img img {
         width: 290px;
         height: 292px; } }
+
+.coaches {
+  width: 100%;
+  padding-top: 55px;
+  padding-bottom: 50px; }
+  .coaches .coaches__wrap {
+    max-width: 1291px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; }
+  .coaches .coaches__title {
+    font-family: "Bebas", "Aria", sans-serif;
+    font-size: 49px;
+    letter-spacing: 2px;
+    color: #102654;
+    margin-left: 47px; }
+  .coaches .coaches__slider_block {
+    padding: 0 25px;
+    margin-top: 55px; }
+  .coaches .coaches__sliders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+  .coaches .coaches__slider_control {
+    width: 97%;
+    position: absolute;
+    top: 26.5%; }
+  .coaches .coaches__button_next,
+  .coaches .coaches__button_back {
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 135px;
+    width: 23px;
+    height: 23px;
+    border-top: 1px solid #afafaf;
+    border-left: 1px solid #afafaf;
+    cursor: pointer; }
+    .coaches .coaches__button_next:hover,
+    .coaches .coaches__button_back:hover {
+      opacity: 0.6; }
+    .coaches .coaches__button_next:active,
+    .coaches .coaches__button_back:active {
+      opacity: 0.8; }
+  .coaches .coaches__button_back {
+    left: -6px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .coaches .coaches__button_next {
+    right: -6px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .coaches .coaches__slider_item {
+    margin: 0 20px;
+    width: 260px;
+    height: 294px;
+    position: relative;
+    cursor: pointer; }
+  .coaches .coaches__slider_description {
+    background: transparent;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1000; }
+    .coaches .coaches__slider_description:hover {
+      background: rgba(16, 38, 84, 0.89); }
+      .coaches .coaches__slider_description:hover h4 {
+        margin-top: 56px; }
+      .coaches .coaches__slider_description:hover span {
+        display: block; }
+      .coaches .coaches__slider_description:hover ul {
+        display: block; }
+    .coaches .coaches__slider_description h4 {
+      font-family: "Roboto Condensed Bold", "Aria", sans-serif;
+      font-size: 18px;
+      margin-top: 249px; }
+    .coaches .coaches__slider_description span {
+      display: none;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 16px;
+      color: #b6bdcc;
+      margin-top: 5px; }
+    .coaches .coaches__slider_description ul {
+      display: none;
+      text-align: left;
+      margin-top: 37px;
+      margin-left: 71px; }
+    .coaches .coaches__slider_description li {
+      display: inline-block;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 14px;
+      width: 159px;
+      margin-bottom: 13px;
+      line-height: 150%;
+      position: relative; }
+      .coaches .coaches__slider_description li::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        top: 7px;
+        left: -16px; }
+  @media (max-width: 1199px) {
+    .coaches {
+      padding-top: 37px; }
+      .coaches .coaches__wrap {
+        max-width: 688px;
+        padding: 0; }
+      .coaches .coaches__title {
+        font-size: 42px;
+        text-align: center;
+        margin: 0; }
+      .coaches .coaches__slider_control {
+        width: 100%;
+        top: 22.5%; }
+      .coaches .coaches__slider_block {
+        width: 567px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        height: 294px;
+        margin-top: 43px;
+        padding: 0; }
+      .coaches .coaches__sliders {
+        width: 1192px;
+        right: 596px; }
+      .coaches .coaches__button_back {
+        left: 9px;
+        z-index: 100; }
+      .coaches .coaches__button_next {
+        right: 9px;
+        z-index: 100; }
+      .coaches .coaches__slider_item {
+        width: 268px;
+        height: 294px;
+        margin: 0 30px 0 0; }
+        .coaches .coaches__slider_item img {
+          width: 100%;
+          height: 100%; } }
+  @media (max-width: 767px) {
+    .coaches {
+      padding-top: 8px; }
+      .coaches .coaches__wrap {
+        max-width: 320px; }
+      .coaches .coaches__title {
+        font-size: 32px;
+        letter-spacing: 1.5px; }
+      .coaches .coaches__slider_control {
+        top: 19.5%; }
+      .coaches .coaches__button_next,
+      .coaches .coaches__button_back {
+        width: 14px;
+        height: 14px; }
+      .coaches .coaches__button_next {
+        right: 17px; }
+      .coaches .coaches__button_back {
+        left: 17px; }
+      .coaches .coaches__slider_block {
+        width: 226px; }
+      .coaches .coaches__sliders {
+        right: 512px; }
+      .coaches .coaches__slider_item {
+        width: 226px;
+        height: 274px; } }
