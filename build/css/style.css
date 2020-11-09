@@ -966,13 +966,21 @@ a {
     color: #102654;
     margin-left: 47px; }
   .coaches .coaches__slider_block {
-    padding: 0 25px;
-    margin-top: 55px; }
+    width: 1200px;
+    padding: 0 20px;
+    margin-top: 55px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto; }
   .coaches .coaches__sliders {
+    width: 2400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative; }
+    position: relative;
+    right: 0;
+    -webkit-transition: right 0.5s;
+    transition: right 0.5s; }
   .coaches .coaches__slider_control {
     width: 97%;
     position: absolute;
@@ -1010,7 +1018,7 @@ a {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); }
   .coaches .coaches__slider_item {
-    margin: 0 20px;
+    margin: 0 40px 0 0;
     width: 260px;
     height: 294px;
     position: relative;
@@ -1079,15 +1087,14 @@ a {
         width: 100%;
         top: 22.5%; }
       .coaches .coaches__slider_block {
-        width: 567px;
-        overflow: hidden;
+        width: 596px;
         margin-left: auto;
         margin-right: auto;
         height: 294px;
         margin-top: 43px;
         padding: 0; }
       .coaches .coaches__sliders {
-        width: 1192px;
+        width: 2384px;
         right: 596px; }
       .coaches .coaches__button_back {
         left: 9px;
@@ -1123,7 +1130,9 @@ a {
       .coaches .coaches__slider_block {
         width: 226px; }
       .coaches .coaches__sliders {
-        right: 512px; }
+        width: 1808px;
+        right: 452px; }
       .coaches .coaches__slider_item {
+        margin: 0;
         width: 226px;
         height: 274px; } }
