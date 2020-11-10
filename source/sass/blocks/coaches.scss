@@ -19,8 +19,8 @@
   }
 
   .coaches__slider_block {
-    width: 1200px;
-    padding: 0 20px;
+    width: 1160px;
+    padding: 0;
     margin-top: 55px;
     overflow: hidden;
     margin-left: auto;
@@ -165,7 +165,7 @@
     }
 
     .coaches__slider_block {
-      width: 596px;
+      width: 567px;
       margin-left: auto;
       margin-right: auto;
       height: 294px;
@@ -236,13 +236,12 @@
     }
 
     .coaches__sliders {
-      // width: 1808px;
-      min-width: 1808px;
-      right: 452px;
+      min-width: 1968px;
+      right: 493px;
     }
 
     .coaches__slider_item {
-      margin: 0;
+      margin: 0 20px 0 0;
       width: 226px;
       height: 274px;
     }

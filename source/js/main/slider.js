@@ -29,18 +29,19 @@ class Slider {
   }
 
   sliderLeft = () => {
-    this.viewSlide += this.sliderViewport;
-    if (this.viewSlide > (this.sliders.offsetWidth - this.sliderViewport )) {
+    this.viewSlide += (this.sliderViewport + this.sliderMarginRight);
+    console.log(this.viewSlide);
+    if (this.viewSlide > (this.sliders.offsetWidth - (this.sliderViewport + this.sliderMarginRight))) {
       this.viewSlide = 0;
     } else {
-      this.viewSlid = this.sliders.offsetWidth - this.sliderViewport;
+      this.viewSlid = this.sliders.offsetWidth - (this.sliderViewport + this.sliderMarginRight);
     }
     this.sliders.style.right = `${this.viewSlide}px`;
   }
 
   sliderRigth = () => {
-    this.viewSlide -= this.sliderViewport;
-    this.viewSlide = this.viewSlide < 0 ? (this.sliders.offsetWidth - this.sliderViewport) : this.viewSlide;
+    this.viewSlide -= (this.sliderViewport + this.sliderMarginRight);
+    this.viewSlide = this.viewSlide < 0 ? (this.sliders.offsetWidth - (this.sliderViewport + this.sliderMarginRight)) : this.viewSlide;
     this.sliders.style.right = `${this.viewSlide}px`;
   }
 }

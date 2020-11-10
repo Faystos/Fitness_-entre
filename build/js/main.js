@@ -15,20 +15,21 @@ var Slider = /*#__PURE__*/function () {
     _classCallCheck(this, Slider);
 
     _defineProperty(this, "sliderLeft", function () {
-      _this.viewSlide += _this.sliderViewport;
+      _this.viewSlide += _this.sliderViewport + _this.sliderMarginRight;
+      console.log(_this.viewSlide);
 
-      if (_this.viewSlide > _this.sliders.offsetWidth - _this.sliderViewport) {
+      if (_this.viewSlide > _this.sliders.offsetWidth - (_this.sliderViewport + _this.sliderMarginRight)) {
         _this.viewSlide = 0;
       } else {
-        _this.viewSlid = _this.sliders.offsetWidth - _this.sliderViewport;
+        _this.viewSlid = _this.sliders.offsetWidth - (_this.sliderViewport + _this.sliderMarginRight);
       }
 
       _this.sliders.style.right = "".concat(_this.viewSlide, "px");
     });
 
     _defineProperty(this, "sliderRigth", function () {
-      _this.viewSlide -= _this.sliderViewport;
-      _this.viewSlide = _this.viewSlide < 0 ? _this.sliders.offsetWidth - _this.sliderViewport : _this.viewSlide;
+      _this.viewSlide -= _this.sliderViewport + _this.sliderMarginRight;
+      _this.viewSlide = _this.viewSlide < 0 ? _this.sliders.offsetWidth - (_this.sliderViewport + _this.sliderMarginRight) : _this.viewSlide;
       _this.sliders.style.right = "".concat(_this.viewSlide, "px");
     });
 
