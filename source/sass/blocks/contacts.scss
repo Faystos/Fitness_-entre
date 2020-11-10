@@ -1,0 +1,273 @@
+.contacts {
+  .contacts__wrap {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  //Блок с формой
+  .contacts__block_feedback {
+    width: 50%;
+    background-color: $main-color;
+    color: $auxiliary-color;
+    padding-top: 65px;
+    padding-bottom: 69px;
+    padding-left: 96px;
+  }
+
+  .contacts__feedback_title {
+    font-family: $title-font;
+    font-size: 49px;
+    letter-spacing: 1.6px;
+    margin-left: 8px;
+    text-transform: uppercase;
+  }
+
+  .contacts__feedback_form {
+    width: 420px;
+    padding: 0 5px;
+    margin-top: 48px;
+  }
+
+  .contacts__feedback_block_input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contacts__feedback_input_name,
+  .contacts__feedback_input_phone {
+    width: 190px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    padding-bottom: 6px;
+    color: $auxiliary-color;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 16px;
+
+    &::placeholder {
+      color: $auxiliary-color;
+      font-family: $main-font;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .contacts__feedback_submit {
+    @include button-reset;
+    @include opacity-link;
+    width: 100%;
+    min-height: 52px;
+    border: 3px solid $auxiliary-color;
+    font-family: $secondary-font-bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 28px;
+    padding: 16px 5px;
+  }
+
+  // Блок с адресами
+  .contacts__block_address {
+    width: 50%;
+    color: $main-color;
+    padding: 67px 0 0 120px;
+  }
+
+  .contacts__address_title {
+    font-family: $title-font;
+    font-size: 49px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+
+  .contacts__address_block_text {
+    width: 404px;
+    margin-top: 48px;
+    margin-left: 4px;
+    display: flex;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 1px;
+      height: 102px;
+      background-color: #74819c;
+      position: absolute;
+      top: 0;
+      left: 57%;
+    }
+  }
+
+  .contacts__address_location,
+  .contacts__address_schedule,
+  .contacts__address_phone,
+  .contacts__address_email {
+    h4 {
+      font-family: $secondary-font-bold;
+      font-size: 16px;
+    }
+
+    p,
+    a {
+      display: block;
+      font-family: $main-font;
+      font-size: 14px;
+      margin-top: 11px;
+    }
+
+    a {
+      @include opacity-link;
+    }
+  }
+
+  .contacts__address_schedule,
+  .contacts__address_email {
+    margin-top: 24px;
+  }
+
+  .contacts__address_block_communication {
+    margin-left: 121px;
+  }
+
+  @media (max-width: $desktop-width) {
+    .contacts__wrap {
+      max-width: 768px;
+      flex-direction: column;
+    }
+
+    // Блок с формой
+    .contacts__block_feedback {
+      width: 100%;
+      padding-left: 126px;
+    }
+
+    .contacts__feedback_title {
+      font-size: 42px;
+    }
+
+    .contacts__feedback_form {
+      width: 485px;
+      margin-top: 42px;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    .contacts__feedback_input_name,
+    .contacts__feedback_input_phone {
+      width: 206px;
+    }
+
+    // Блок с адресами
+    .contacts__block_address {
+      width: 100%;
+      padding-left: 132px;
+    }
+
+    .contacts__address_title {
+      font-size: 42px;
+    }
+
+    .contacts__address_block_text {
+      width: 466px;
+      margin-top: 40px;
+      margin-left: 1px;
+
+      &::before {
+        height: 129px;
+        top: 3px;
+      }
+    }
+
+    .contacts__address_location,
+    .contacts__address_schedule,
+    .contacts__address_phone,
+    .contacts__address_email {
+      h4 {
+        font-size: 20px;
+      }
+
+      p,
+      a {
+        font-size: 18px;
+        margin-top: 15px;
+      }
+    }
+
+    .contacts__address_email,
+    .contacts__address_schedule {
+      margin-top: 29px;
+    }
+
+    .contacts__address_block_communication {
+      margin-left: 96px;
+    }
+  }
+
+  @media (max-width: $table-width) {
+    .contacts__wrap {
+      max-width: 320px;
+    }
+
+    //Блок с формой
+    .contacts__block_feedback {
+      padding-top: 67px;
+      padding-left: 7px;
+    }
+
+    .contacts__feedback_title {
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    .contacts__feedback_form {
+      width: 100%;
+      margin: 42px auto 0;
+    }
+
+    .contacts__feedback_input_name,
+    .contacts__feedback_input_phone,
+    .contacts__feedback_submit {
+      width: 290px;
+    }
+
+    .contacts__feedback_input_phone {
+      margin-top: 36px;
+    }
+
+    .contacts__feedback_submit {
+      margin-top: 38px;
+    }
+
+    // Блок с адресами
+    .contacts__block_address {
+      padding-left: 15px;
+    }
+
+    .contacts__address_title {
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    .contacts__address_block_text {
+      width: 83%;
+      margin-top: 42px;
+      flex-direction: column;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .contacts__address_block_communication {
+      margin-top: 29px;
+      margin-left: 0;
+    }
+  }
+}
