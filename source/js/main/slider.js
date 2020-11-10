@@ -30,7 +30,6 @@ class Slider {
 
   sliderLeft = () => {
     this.viewSlide += (this.sliderViewport + this.sliderMarginRight);
-    console.log(this.viewSlide);
     if (this.viewSlide > (this.sliders.offsetWidth - (this.sliderViewport + this.sliderMarginRight))) {
       this.viewSlide = 0;
     } else {
@@ -47,3 +46,4 @@ class Slider {
 }
 
 new Slider('coaches');
+new Slider('reviews');

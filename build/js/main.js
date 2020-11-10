@@ -16,7 +16,6 @@ var Slider = /*#__PURE__*/function () {
 
     _defineProperty(this, "sliderLeft", function () {
       _this.viewSlide += _this.sliderViewport + _this.sliderMarginRight;
-      console.log(_this.viewSlide);
 
       if (_this.viewSlide > _this.sliders.offsetWidth - (_this.sliderViewport + _this.sliderMarginRight)) {
         _this.viewSlide = 0;
@@ -70,3 +69,4 @@ var Slider = /*#__PURE__*/function () {
 }();
 
 new Slider('coaches');
+new Slider('reviews');

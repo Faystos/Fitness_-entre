@@ -395,13 +395,11 @@
         </div>
       </div>
     </section>
-
     <section class="stocks">
       <div class="stocks__wrap">
         <div class="stocks__title">
           <h3>Акции</h3>
         </div>
-
         <div class="stocks__block_stock">
           <div class="stocks__main_stock">
             <div class="stocks__main_text">
@@ -433,7 +431,48 @@
               <a href="#">подробнее</a>
             </div>
           </div>
-
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrap">
+        <div class="reviews__title">
+          <h3>Отзывы</h3>
+        </div>
+        <div class="reviews__slider_control">
+          <button class="reviews__button_next">Вперед</button>
+          <button class="reviews__button_back">Назад</button>
+        </div>
+        <div class="reviews__slider_block">
+          <div class="reviews__sliders">
+            <div class="reviews__slider_item">
+              <div class="reviews__slider_img">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp" srcset="./img/image/reviews/reviews_photo_mobile.webp 1x, ./img/image/reviews/reviews_photo_mobile@2x.webp 2x">
+                  <source media="(max-width: 1199px)" type="image/webp" srcset="./img/image/reviews/reviews_photo_tablet.webp 1x, ./img/image/reviews/reviews_photo_tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="../img/image/reviews/reviews_photo_desctop.webp 1x, ./img/image/reviews/reviews_photo_desctop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/image/reviews/reviews_photo_mobile.jpg 1x, ./img/image/reviews/reviews_photo_mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="./img/image/reviews/reviews_photo_tablet.jpg 1x, ./img/image/reviews/reviews_photo_tablet@2x.jpg 2x">
+                  <img src="./img/image/reviews/reviews_photo_desctop.jpg" srcset="./img/image/reviews/reviews_photo_desctop@2x.jpg 2x" alt="фотография оставившего отзыв" width="80" height="80">
+                </picture>
+              </div>
+              <div class="reviews__slider_text">
+                <h4>Анна Орлова</h4>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
+            <div class="reviews__slider_item">
+              <div class="reviews__slider_img">
+                <picture>
+                  <img src="./img/image/reviews/reviews_photo_desctop.jpg" alt="фотография оставившего отзыв" width="80" height="80">
+                </picture>
+              </div>
+              <div class="reviews__slider_text">
+                <h4>Нина Иванова</h4>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
