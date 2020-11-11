@@ -123,27 +123,27 @@ table {
 @font-face {
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/roboto-condensed/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed//roboto-condensed-regular.woff") format("woff"); }
+  src: url("../fonts/roboto_condensed/roboto_condensed_regular.woff2") format("woff2"), url("../fonts/roboto_condensed/roboto_condensed_regular.woff") format("woff"); }
 
 @font-face {
   font-family: "Roboto Condensed Bold";
   font-display: swap;
-  src: url("../fonts/roboto-condensed/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed/roboto-condensed-bold.woff") format("woff"); }
+  src: url("../fonts/roboto_condensed/roboto_condensed_bold.woff2") format("woff2"), url("../fonts/roboto_condensed/roboto_condensed_bold.woff") format("woff"); }
 
 @font-face {
   font-family: "Roboto Condensed Light";
   font-display: swap;
-  src: url("../fonts/roboto-condensed/roboto-condensed-light.woff2") format("woff2"), url("../fonts/roboto-condensed/roboto-condensed-light.woff") format("woff"); }
+  src: url("../fonts/roboto_condensed/roboto_condensed_light.woff2") format("woff2"), url("../fonts/roboto_condensed/roboto_condensed_light.woff") format("woff"); }
 
 @font-face {
   font-family: "Bebas";
   font-display: swap;
-  src: url("../fonts/bebas/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas/bebas-neue-regular.woff") format("woff"); }
+  src: url("../fonts/bebas/bebas_neue_regular.woff2") format("woff2"), url("../fonts/bebas/bebas_neue_regular.woff") format("woff"); }
 
 @font-face {
   font-family: "Bebas Bold";
   font-display: swap;
-  src: url("../fonts/bebas/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas/bebas-neue-bold.woff") format("woff"); }
+  src: url("../fonts/bebas/bebas_neue_bold.woff2") format("woff2"), url("../fonts/bebas/bebas_neue_bold.woff") format("woff"); }
 
 .visually-hidden {
   position: absolute;
@@ -197,7 +197,7 @@ a {
             justify-content: space-between;
     padding: 28px 103px; }
   .header .header__wrap a {
-    font-family: "Bebas", "Arial", sans-serif;
+    font-family: "Bebas", "Aria", sans-serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 1px;
@@ -230,11 +230,11 @@ a {
   width: 100%;
   padding-top: 51px;
   padding-bottom: 51px;
-  background-image: url("../img/bg/description/description-gradient-bg-desc.png");
+  background-image: url("../img/bg/description/description_gradient_bg_desc.png");
   background-size: cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .description {
-      background-image: url("../img/bg/description/description-gradient-bg-desc@2x.png"); } }
+      background-image: url("../img/bg/description/description_gradient_bg_desc@2x.png"); } }
   .description .description__wrap {
     max-width: 1366px;
     min-height: 556px;
@@ -254,7 +254,7 @@ a {
     padding-top: 111px;
     margin: 0 5px 0 99px; }
   .description .description__text p {
-    font-family: "Bebas", "Arial", sans-serif;
+    font-family: "Bebas", "Aria", sans-serif;
     font-size: 49px;
     line-height: 59px;
     letter-spacing: 0.03em;
@@ -266,7 +266,7 @@ a {
     width: 298px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-family: "Bebas", "Arial", sans-serif;
+    font-family: "Bebas", "Aria", sans-serif;
     margin: 2px 0 0 0; }
   .description .description__block_text_description {
     width: 129px;
@@ -275,7 +275,7 @@ a {
     line-height: 150%;
     margin: -85px 0 0 -96px; }
   .description .description__text a {
-    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    font-family: "Roboto Condensed Bold", "Aria", sans-serif;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.05em;
@@ -415,7 +415,7 @@ a {
     padding-top: 44px;
     margin-left: 60px; }
     .trainers .trainers__block_text h2 {
-      font-family: "Bebas", "Arial", sans-serif;
+      font-family: "Bebas", "Aria", sans-serif;
       font-size: 49px;
       line-height: 49px;
       letter-spacing: 1.6px; }
@@ -760,7 +760,10 @@ a {
           margin: 0 7.5px;
           padding-bottom: 12px; }
       .subscription .subscription__tabs {
-        display: block;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 100%;
         margin-top: 35px;
         margin-left: auto;
@@ -1980,7 +1983,7 @@ a {
 
 .footer {
   width: 100%;
-  background: #030A1A;
+  background: #030a1a;
   color: #ffffff;
   padding-top: 42px;
   padding-bottom: 39px; }

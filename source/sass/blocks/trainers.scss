@@ -19,7 +19,7 @@
     margin-left: 60px;
 
     h2 {
-      font-family: "Bebas", "Arial", sans-serif;
+      font-family: $title-font;
       font-size: 49px;
       line-height: 49px;
       letter-spacing: 1.6px;
@@ -37,7 +37,7 @@
     margin-top: 38px;
 
     p {
-      font-family: "Roboto Condensed Light", "Arial", sans-serif;
+      font-family: $main-font-Light;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0;

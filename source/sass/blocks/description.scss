@@ -3,11 +3,11 @@
   padding-top: 51px;
   padding-bottom: 51px;
 
-  background-image: url("../img/bg/description/description-gradient-bg-desc.png");
+  background-image: url("../img/bg/description/description_gradient_bg_desc.png");
   background-size: cover;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg/description/description-gradient-bg-desc@2x.png");
+    background-image: url("../img/bg/description/description_gradient_bg_desc@2x.png");
   }
 
   .description__wrap {
@@ -29,7 +29,7 @@
   }
 
   .description__text p {
-    font-family: "Bebas", "Arial", sans-serif;
+    font-family: $title-font;
     font-size: 49px;
     line-height: 59px;
     letter-spacing: 0.03em;
@@ -43,7 +43,7 @@
     width: 298px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-family: "Bebas", "Arial", sans-serif;
+    font-family: $title-font;
     margin: 2px 0 0 0;
   }
 
@@ -57,7 +57,7 @@
 
   .description__text a {
     @include opacity-link;
-    font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+    font-family: $secondary-font-bold;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.05em;
