@@ -152,15 +152,18 @@
     }
   }
 
-  .subscription__tab_btn {
-    @include button-reset;
+  .subscription__tab_link {
+    // @include button-reset;
+    display: block;
     font-family: $secondary-font-bold;
-    min-width: 208px;
+    width: 208px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid #102654;
     padding: 24px 0;
 
@@ -227,7 +230,7 @@
       }
     }
 
-    .subscription__tab_btn {
+    .subscription__tab_link {
       margin-top: 34px;
     }
   }
@@ -329,7 +332,7 @@
         transform: translateX(-49%);
       }
 
-      .subscription__tab_btn {
+      .subscription__tab_link {
         margin-top: 31px;
       }
 
