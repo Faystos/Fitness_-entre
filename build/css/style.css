@@ -596,18 +596,27 @@ a {
       margin: 0 21px;
       padding-bottom: 14px;
       cursor: pointer; }
-  .subscription .subscription__tab_control--active {
-    border-bottom: 2px solid #d10a42; }
+  .subscription .subscription__tab_control {
+    outline: none; }
+    .subscription .subscription__tab_control--active {
+      color: #102654;
+      border-bottom: 2px solid #d10a42; }
+    .subscription .subscription__tab_control:hover {
+      color: #d10a42; }
+    .subscription .subscription__tab_control:active {
+      color: rgba(16, 38, 84, 0.5); }
   .subscription .subscription__tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 51px; }
+    .subscription .subscription__tabs--active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .subscription .subscription__tab {
     width: 360px;
     min-height: 448px;
@@ -1595,8 +1604,8 @@ a {
     width: 560px;
     min-height: 242px;
     margin: 55px auto 0;
-    -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-            box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+    -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+            box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
     overflow: hidden; }
   .reviews .reviews__sliders {
     min-width: 1160px;
@@ -1617,7 +1626,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: #1C3374;
+    background: #1c3374;
     padding: 60px 5px 5px 16px; }
   .reviews .reviews__slider_img {
     width: 80px;
@@ -1748,7 +1757,7 @@ a {
   background: transparent;
   outline: none;
   border: none;
-  border-bottom: 1px solid #74819C;
+  border-bottom: 1px solid #74819c;
   padding-bottom: 6px;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1812,11 +1821,10 @@ a {
 .contacts .contacts__block_address {
   width: 50%;
   color: #102654;
-  padding: 67px 0px 0 120px; }
+  padding: 67px 0 0 120px; }
 
 .contacts .contacts__address_title {
   font-family: "Bebas", "Aria", sans-serif;
-  font-size: 49px;
   font-size: 49px;
   letter-spacing: 1.6px;
   text-transform: uppercase; }
@@ -1878,57 +1886,59 @@ a {
   margin-left: 121px; }
 
 @media (max-width: 1199px) {
-  .contacts .contacts__wrap {
-    max-width: 768px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .contacts .contacts__block_feedback {
-    width: 100%;
-    padding-left: 126px; }
-  .contacts .contacts__feedback_title {
-    font-size: 42px; }
-  .contacts .contacts__feedback_form {
-    width: 485px;
-    margin-top: 42px;
-    padding-left: 7px;
-    padding-right: 7px; }
-  .contacts .contacts__feedback_input_name,
-  .contacts .contacts__feedback_input_phone {
-    width: 206px; }
-  .contacts .contacts__block_address {
-    width: 100%;
-    padding-left: 132px; }
-  .contacts .contacts__address_title {
-    font-size: 42px; }
-  .contacts .contacts__address_block_text {
-    width: 466px;
-    margin-top: 40px;
-    margin-left: 1px; }
-    .contacts .contacts__address_block_text::before {
-      height: 129px;
-      top: 3px; }
-  .contacts .contacts__address_location h4,
-  .contacts .contacts__address_schedule h4,
-  .contacts .contacts__address_phone h4,
-  .contacts .contacts__address_email h4 {
-    font-size: 20px; }
-  .contacts .contacts__address_location p,
-  .contacts .contacts__address_location a,
-  .contacts .contacts__address_schedule p,
-  .contacts .contacts__address_schedule a,
-  .contacts .contacts__address_phone p,
-  .contacts .contacts__address_phone a,
-  .contacts .contacts__address_email p,
-  .contacts .contacts__address_email a {
-    font-size: 18px;
-    margin-top: 15px; }
-  .contacts .contacts__address_email,
-  .contacts .contacts__address_schedule {
-    margin-top: 29px; }
-  .contacts .contacts__address_block_communication {
-    margin-left: 96px; } }
+  .contacts {
+    padding-bottom: 67px; }
+    .contacts .contacts__wrap {
+      max-width: 768px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .contacts .contacts__block_feedback {
+      width: 100%;
+      padding-left: 126px; }
+    .contacts .contacts__feedback_title {
+      font-size: 42px; }
+    .contacts .contacts__feedback_form {
+      width: 485px;
+      margin-top: 42px;
+      padding-left: 7px;
+      padding-right: 7px; }
+    .contacts .contacts__feedback_input_name,
+    .contacts .contacts__feedback_input_phone {
+      width: 206px; }
+    .contacts .contacts__block_address {
+      width: 100%;
+      padding-left: 132px; }
+    .contacts .contacts__address_title {
+      font-size: 42px; }
+    .contacts .contacts__address_block_text {
+      width: 466px;
+      margin-top: 40px;
+      margin-left: 1px; }
+      .contacts .contacts__address_block_text::before {
+        height: 129px;
+        top: 3px; }
+    .contacts .contacts__address_location h4,
+    .contacts .contacts__address_schedule h4,
+    .contacts .contacts__address_phone h4,
+    .contacts .contacts__address_email h4 {
+      font-size: 20px; }
+    .contacts .contacts__address_location p,
+    .contacts .contacts__address_location a,
+    .contacts .contacts__address_schedule p,
+    .contacts .contacts__address_schedule a,
+    .contacts .contacts__address_phone p,
+    .contacts .contacts__address_phone a,
+    .contacts .contacts__address_email p,
+    .contacts .contacts__address_email a {
+      font-size: 18px;
+      margin-top: 15px; }
+    .contacts .contacts__address_email,
+    .contacts .contacts__address_schedule {
+      margin-top: 29px; }
+    .contacts .contacts__address_block_communication {
+      margin-left: 96px; } }
 
 @media (max-width: 767px) {
   .contacts .contacts__wrap {
@@ -1966,7 +1976,136 @@ a {
       display: none; }
   .contacts .contacts__address_block_communication {
     margin-top: 29px;
-    margin-left: 0px; } }
+    margin-left: 0; } }
 
-/*
-*/
+.footer {
+  width: 100%;
+  background: #030A1A;
+  color: #ffffff;
+  padding-top: 42px;
+  padding-bottom: 39px; }
+  .footer .footer__wrap {
+    width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer .footer__logo {
+    font-family: "Bebas", "Aria", sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 1px; }
+  .footer .footer__link {
+    min-width: 431px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 5px 5px 0 26px; }
+    .footer .footer__link a:hover {
+      opacity: 0.6; }
+    .footer .footer__link a:active {
+      opacity: 0.8; }
+  .footer .footer__social {
+    width: 136px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -25px 0 0;
+    overflow: hidden; }
+    .footer .footer__social a:first-of-type {
+      margin-top: 4px; }
+    .footer .footer__social a {
+      margin-right: 25px; }
+      .footer .footer__social a:hover {
+        opacity: 0.6; }
+      .footer .footer__social a:active {
+        opacity: 0.8; }
+  @media (max-width: 1199px) {
+    .footer {
+      padding-bottom: 42px; }
+      .footer .footer__wrap {
+        width: 678px;
+        padding: 0; }
+      .footer .footer__logo {
+        font-size: 24px;
+        letter-spacing: 0.5px; }
+      .footer .footer__link {
+        min-width: 391px;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 8px 22px 0 43px; }
+      .footer .footer__social {
+        width: 121px;
+        margin: 3px -21px 0 0; }
+        .footer .footer__social a {
+          margin: 0 20px 0 0; } }
+  @media (max-width: 767px) {
+    .footer {
+      padding-bottom: 48px; }
+      .footer .footer__wrap {
+        width: 320px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .footer .footer__logo {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 3px; }
+      .footer .footer__link {
+        position: relative;
+        width: 239px;
+        min-width: auto;
+        margin: 17px 0 0 15px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        font-size: 16px;
+        line-height: 19px; }
+      .footer .footer__link_services {
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
+        margin-right: 21px;
+        margin-bottom: 20px; }
+      .footer .footer__link_season {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+        margin-right: 32px; }
+      .footer .footer__link_coaches {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        margin-right: 22px; }
+      .footer .footer__link_schedule {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4; }
+      .footer .footer__link_stocks {
+        position: absolute;
+        top: -40px;
+        right: 38px; }
+      .footer .footer__social {
+        width: 207px;
+        margin: 35px 0 0 17px; }
+        .footer .footer__social a {
+          margin: 3px 33px 0 0; }
+        .footer .footer__social a:nth-child(2) {
+          margin-right: 25px; }
+      .footer .footer__social_icon {
+        width: 30px;
+        height: 24px; } }

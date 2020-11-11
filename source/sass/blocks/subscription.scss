@@ -62,16 +62,31 @@
   }
 
   .subscription__tab_control {
+    outline: none;
+
     &--active {
+      color: $main-color;
       border-bottom: 2px solid #d10a42;
+    }
+
+    &:hover {
+      color: #d10a42;
+    }
+
+    &:active {
+      color: rgba(16, 38, 84, 0.5);
     }
   }
 
   .subscription__tabs {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 51px;
+
+    &--active {
+      display: flex;
+    }
   }
 
   .subscription__tab {

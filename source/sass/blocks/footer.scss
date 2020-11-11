@@ -1,0 +1,153 @@
+.footer {
+  width: 100%;
+  background: #030a1a;
+  color: $auxiliary-color;
+  padding-top: 42px;
+  padding-bottom: 39px;
+
+  .footer__wrap {
+    width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    font-family: $title-font;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 1px;
+  }
+
+  .footer__link {
+    min-width: 431px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 5px 5px 0 26px;
+
+    a {
+      @include opacity-link;
+    }
+  }
+
+  .footer__social {
+    width: 136px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px 0 0;
+    overflow: hidden;
+
+    a:first-of-type {
+      margin-top: 4px;
+    }
+
+    a {
+      @include opacity-link;
+      margin-right: 25px;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 42px;
+
+    .footer__wrap {
+      width: 678px;
+      padding: 0;
+    }
+
+    .footer__logo {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+
+    .footer__link {
+      min-width: 391px;
+      font-size: 14px;
+      line-height: 16px;
+      margin: 8px 22px 0 43px;
+    }
+
+    .footer__social {
+      width: 121px;
+      margin: 3px -21px 0 0;
+
+      a {
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+
+  @media (max-width: $table-width) {
+    padding-bottom: 48px;
+
+    .footer__wrap {
+      width: 320px;
+      flex-direction: column;
+    }
+
+    .footer__logo {
+      font-size: 20px;
+      margin-left: 15px;
+      margin-top: 3px;
+    }
+
+    .footer__link {
+      position: relative;
+      width: 239px;
+      min-width: auto;
+      margin: 17px 0 0 15px;
+      flex-wrap: wrap;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .footer__link_services {
+      order: 0;
+      margin-right: 21px;
+      margin-bottom: 20px;
+    }
+
+    .footer__link_season {
+      order: 3;
+      margin-right: 32px;
+    }
+
+    .footer__link_coaches {
+      order: 2;
+      margin-right: 22px;
+    }
+
+    .footer__link_schedule {
+      order: 4;
+    }
+
+    .footer__link_stocks {
+      position: absolute;
+      top: -40px;
+      right: 38px;
+    }
+
+    .footer__social {
+      width: 207px;
+      margin: 35px 0 0 17px;
+
+      a {
+        margin: 3px 33px 0 0;
+      }
+
+      a:nth-child(2) {
+        margin-right: 25px;
+      }
+    }
+
+    .footer__social_icon {
+      width: 30px;
+      height: 24px;
+    }
+  }
+}

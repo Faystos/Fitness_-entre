@@ -137,6 +137,8 @@
   }
 
   @media (max-width: $desktop-width) {
+    padding-bottom: 67px;
+
     .contacts__wrap {
       max-width: 768px;
       flex-direction: column;

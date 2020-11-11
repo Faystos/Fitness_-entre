@@ -70,3 +70,101 @@ var Slider = /*#__PURE__*/function () {
 
 new Slider('coaches');
 new Slider('reviews');
+
+var Scrolling = /*#__PURE__*/function () {
+  function Scrolling() {
+    _classCallCheck(this, Scrolling);
+
+    this.linkNav = document.querySelectorAll('[href^="#"]');
+    this.linkNavArr = Array.prototype.slice.call(this.linkNav);
+    this.speed = 1;
+    this.scrollInit();
+  }
+
+  _createClass(Scrolling, [{
+    key: "scrollInit",
+    value: function scrollInit() {
+      var _this3 = this;
+
+      this.linkNavArr.forEach(function (el) {
+        el.addEventListener('click', function (evt) {
+          evt.preventDefault();
+          var speed = _this3.speed;
+          var w = window.pageYOffset;
+          var hash = evt.target.href.replace(/[^#]*(.*)/, '$1');
+          var t = document.querySelector(hash).getBoundingClientRect().top;
+          var start = null;
+          requestAnimationFrame(step);
+
+          function step(time) {
+            if (start === null) start = time;
+            var progress = time - start;
+            var r = t < 0 ? Math.max(w - progress / speed, w + t) : Math.min(w + progress / speed, w + t);
+            window.scrollTo(0, r);
+
+            if (r != w + t) {
+              requestAnimationFrame(step);
+            } else {
+              location.hash = hash;
+            }
+          }
+        }, false);
+      });
+    }
+  }]);
+
+  return Scrolling;
+}();
+
+new Scrolling();
+'use strict';
+
+var Tabs = /*#__PURE__*/function () {
+  function Tabs(controls, tabElements) {
+    _classCallCheck(this, Tabs);
+
+    _defineProperty(this, "toggleClassBtn", function (arrBtn, target) {
+      arrBtn.forEach(function (el) {
+        return el.classList.remove('subscription__tab_control--active');
+      });
+      target.classList.add('subscription__tab_control--active');
+    });
+
+    _defineProperty(this, "toggleTab", function (arr, i) {
+      arr.forEach(function (tab, index, array) {
+        tab.classList.remove('subscription__tabs--active');
+
+        if (i === index) {
+          tab.classList.add('subscription__tabs--active');
+        }
+      });
+    });
+
+    this.controls = document.querySelectorAll(".".concat(controls));
+    this.controlArr = Array.prototype.slice.call(this.controls);
+    this.tabElements = document.querySelectorAll(".".concat(tabElements));
+    this.tabElementArr = Array.prototype.slice.call(this.tabElements);
+    this.initDropdown();
+  }
+
+  _createClass(Tabs, [{
+    key: "initDropdown",
+    value: function initDropdown() {
+      var _this4 = this;
+
+      this.controlArr.forEach(function (el, i, arr) {
+        el.addEventListener('click', function (_ref) {
+          var target = _ref.target;
+
+          _this4.toggleClassBtn(arr, target);
+
+          _this4.toggleTab(_this4.tabElementArr, i);
+        });
+      });
+    }
+  }]);
+
+  return Tabs;
+}();
+
+new Tabs('subscription__tab_control', 'subscription__tabs');
