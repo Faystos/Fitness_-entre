@@ -197,7 +197,7 @@ a {
             justify-content: space-between;
     padding: 28px 103px; }
   .header .header__wrap a {
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 1px;
@@ -254,7 +254,7 @@ a {
     padding-top: 111px;
     margin: 0 5px 0 99px; }
   .description .description__text p {
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 49px;
     line-height: 59px;
     letter-spacing: 0.03em;
@@ -266,7 +266,7 @@ a {
     width: 298px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     margin: 2px 0 0 0; }
   .description .description__block_text_description {
     width: 129px;
@@ -415,7 +415,7 @@ a {
     padding-top: 44px;
     margin-left: 60px; }
     .trainers .trainers__block_text h2 {
-      font-family: "Bebas", "Aria", sans-serif;
+      font-family: "Bebas", "Tahoma", sans-serif;
       font-size: 49px;
       line-height: 49px;
       letter-spacing: 1.6px; }
@@ -574,7 +574,7 @@ a {
   .subscription .subscription__wrap {
     margin: 0 auto; }
   .subscription .subscription__title h2 {
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 49px;
     letter-spacing: 1.9px; }
   .subscription .subscription__tabs_control {
@@ -828,7 +828,7 @@ a {
     font-family: "Roboto Condensed", "Arial", sans-serif; }
   .promo .promo__title h3 {
     width: 190px;
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 90px;
     letter-spacing: 3.4px;
     margin-left: 78px; }
@@ -970,7 +970,7 @@ a {
     padding: 0 20px;
     position: relative; }
   .coaches .coaches__title {
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 49px;
     letter-spacing: 2px;
     color: #102654;
@@ -1160,7 +1160,7 @@ a {
     max-width: 1038px;
     margin: 0 auto; }
   .advantages .advantages__title {
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 49px;
     letter-spacing: 1.7px;
     color: #102654;
@@ -1337,7 +1337,7 @@ a {
     width: 1160px;
     margin: 0 auto; }
   .stocks .stocks__title {
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     color: #102654;
     letter-spacing: 2px;
     font-size: 49px;
@@ -1561,7 +1561,7 @@ a {
     width: 702px;
     margin: 0 auto; }
   .reviews .reviews__title {
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 49px;
     color: #102654;
     text-align: center;
@@ -1732,7 +1732,7 @@ a {
   padding-left: 96px; }
 
 .contacts .contacts__feedback_title {
-  font-family: "Bebas", "Aria", sans-serif;
+  font-family: "Bebas", "Tahoma", sans-serif;
   font-size: 49px;
   letter-spacing: 1.6px;
   margin-left: 8px;
@@ -1826,7 +1826,7 @@ a {
   padding: 67px 0 0 120px; }
 
 .contacts .contacts__address_title {
-  font-family: "Bebas", "Aria", sans-serif;
+  font-family: "Bebas", "Tahoma", sans-serif;
   font-size: 49px;
   letter-spacing: 1.6px;
   text-transform: uppercase; }
@@ -1997,7 +1997,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .footer .footer__logo {
-    font-family: "Bebas", "Aria", sans-serif;
+    font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 1px; }

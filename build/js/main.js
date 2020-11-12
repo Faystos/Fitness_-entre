@@ -9,28 +9,69 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 (function () {
+  var MaskTel = /*#__PURE__*/function () {
+    function MaskTel() {
+      var _this = this;
+
+      _classCallCheck(this, MaskTel);
+
+      _defineProperty(this, "handlerMaskInp", function () {
+        _this.inputsTelArr.forEach(function (el) {
+          var mask = IMask(el, {
+            mask: '+{7}(000)000-00-00'
+          });
+          el.addEventListener('focus', function () {
+            el.value = '+7(';
+          });
+          el.addEventListener('blur', function () {
+            if (el.value.length <= 2) el.value = '';
+          });
+        });
+      });
+
+      this.inputsTel = document.querySelectorAll('input[type="tel"]');
+      this.inputsTelArr = Array.prototype.slice.call(this.inputsTel);
+      this.maskInit();
+    }
+
+    _createClass(MaskTel, [{
+      key: "maskInit",
+      value: function maskInit() {
+        this.handlerMaskInp();
+      }
+    }]);
+
+    return MaskTel;
+  }();
+
+  new MaskTel();
+})();
+
+'use strict';
+
+(function () {
   var Slider = /*#__PURE__*/function () {
     function Slider(slider) {
-      var _this = this;
+      var _this2 = this;
 
       _classCallCheck(this, Slider);
 
       _defineProperty(this, "sliderLeft", function () {
-        _this.viewSlide += _this.sliderViewport + _this.sliderMarginRight;
+        _this2.viewSlide += _this2.sliderViewport + _this2.sliderMarginRight;
 
-        if (_this.viewSlide > _this.sliders.offsetWidth - (_this.sliderViewport + _this.sliderMarginRight)) {
-          _this.viewSlide = 0;
+        if (_this2.viewSlide > _this2.sliders.offsetWidth - (_this2.sliderViewport + _this2.sliderMarginRight)) {
+          _this2.viewSlide = 0;
         } else {
-          _this.viewSlid = _this.sliders.offsetWidth - (_this.sliderViewport + _this.sliderMarginRight);
+          _this2.viewSlid = _this2.sliders.offsetWidth - (_this2.sliderViewport + _this2.sliderMarginRight);
         }
 
-        _this.sliders.style.right = "".concat(_this.viewSlide, "px");
+        _this2.sliders.style.right = "".concat(_this2.viewSlide, "px");
       });
 
       _defineProperty(this, "sliderRight", function () {
-        _this.viewSlide -= _this.sliderViewport + _this.sliderMarginRight;
-        _this.viewSlide = _this.viewSlide < 0 ? _this.sliders.offsetWidth - (_this.sliderViewport + _this.sliderMarginRight) : _this.viewSlide;
-        _this.sliders.style.right = "".concat(_this.viewSlide, "px");
+        _this2.viewSlide -= _this2.sliderViewport + _this2.sliderMarginRight;
+        _this2.viewSlide = _this2.viewSlide < 0 ? _this2.sliders.offsetWidth - (_this2.sliderViewport + _this2.sliderMarginRight) : _this2.viewSlide;
+        _this2.sliders.style.right = "".concat(_this2.viewSlide, "px");
       });
 
       //Управление слайдером
@@ -51,17 +92,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     _createClass(Slider, [{
       key: "sliderInit",
       value: function sliderInit() {
-        var _this2 = this;
+        var _this3 = this;
 
         this.sliderBtnNext.addEventListener("click", function (evt) {
           evt.preventDefault();
 
-          _this2.sliderLeft();
+          _this3.sliderLeft();
         });
         this.sliderBtnBack.addEventListener("click", function (evt) {
           evt.preventDefault();
 
-          _this2.sliderRight();
+          _this3.sliderRight();
         });
       }
     }]);
@@ -89,12 +130,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     _createClass(Scrolling, [{
       key: "scrollInit",
       value: function scrollInit() {
-        var _this3 = this;
+        var _this4 = this;
 
         this.linkNavArr.forEach(function (el) {
           el.addEventListener('click', function (evt) {
             evt.preventDefault();
-            var speed = _this3.speed;
+            var speed = _this4.speed;
             var w = window.pageYOffset;
             var hash = evt.target.href.replace(/[^#]*(.*)/, '$1');
             var t = document.querySelector(hash).getBoundingClientRect().top;
@@ -158,15 +199,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     _createClass(Tabs, [{
       key: "initDropdown",
       value: function initDropdown() {
-        var _this4 = this;
+        var _this5 = this;
 
         this.controlArr.forEach(function (el, i, arr) {
           el.addEventListener("click", function (_ref) {
             var target = _ref.target;
 
-            _this4.toggleClassBtn(arr, target);
+            _this5.toggleClassBtn(arr, target);
 
-            _this4.toggleTab(_this4.tabElementArr, i);
+            _this5.toggleTab(_this5.tabElementArr, i);
           });
         });
       }
