@@ -1070,6 +1070,7 @@ a {
       margin-left: 71px; }
     .coaches .coaches__slider_description li {
       display: inline-block;
+      vertical-align: auto;
       font-family: "Roboto Condensed", "Arial", sans-serif;
       font-size: 14px;
       width: 159px;
@@ -1737,7 +1738,7 @@ a {
   margin-left: 8px;
   text-transform: uppercase; }
 
-.contacts .contacts__feedback_form {
+.contacts form {
   width: 420px;
   padding: 0 5px;
   margin-top: 48px; }
@@ -1900,7 +1901,7 @@ a {
       padding-left: 126px; }
     .contacts .contacts__feedback_title {
       font-size: 42px; }
-    .contacts .contacts__feedback_form {
+    .contacts form {
       width: 485px;
       margin-top: 42px;
       padding-left: 7px;
@@ -1950,7 +1951,7 @@ a {
   .contacts .contacts__feedback_title {
     font-size: 32px;
     letter-spacing: 1px; }
-  .contacts .contacts__feedback_form {
+  .contacts form {
     width: 100%;
     margin: 42px auto 0; }
   .contacts .contacts__feedback_input_name,

@@ -153,7 +153,6 @@
   }
 
   .subscription__tab_link {
-    // @include button-reset;
     display: block;
     font-family: $secondary-font-bold;
     width: 208px;
@@ -279,7 +278,6 @@
     }
 
     .subscription__tabs {
-      // display: block;
       flex-direction: column;
       width: 100%;
       margin-top: 35px;
