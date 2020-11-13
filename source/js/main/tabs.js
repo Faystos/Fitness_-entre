@@ -36,5 +36,3 @@
   }
   new Tabs(`subscription__tab_control`, `subscription__tabs`);
 })();
-
-

@@ -49,5 +49,3 @@
   new Slider(`coaches`);
   new Slider(`reviews`);
 })();
-
-

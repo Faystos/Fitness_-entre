@@ -28,33 +28,32 @@
     width: 420px;
     padding: 0 5px;
     margin-top: 48px;
+
+    input {
+      width: 190px;
+      background: transparent;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #74819c;
+      padding-bottom: 6px;
+      color: $auxiliary-color;
+      font-family: $main-font;
+      font-size: 14px;
+      line-height: 16px;
+
+      &::placeholder {
+        color: $auxiliary-color;
+        font-family: $main-font;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
   }
 
   .contacts__feedback_block_input {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  .contacts__feedback_input_name,
-  .contacts__feedback_input_phone {
-    width: 190px;
-    background: transparent;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #74819c;
-    padding-bottom: 6px;
-    color: $auxiliary-color;
-    font-family: $main-font;
-    font-size: 14px;
-    line-height: 16px;
-
-    &::placeholder {
-      color: $auxiliary-color;
-      font-family: $main-font;
-      font-size: 14px;
-      line-height: 16px;
-    }
   }
 
   .contacts__feedback_submit {
@@ -159,11 +158,10 @@
       margin-top: 42px;
       padding-left: 7px;
       padding-right: 7px;
-    }
 
-    .contacts__feedback_input_name,
-    .contacts__feedback_input_phone {
-      width: 206px;
+      input {
+        width: 206px;
+      }
     }
 
     // Блок с адресами
@@ -231,19 +229,18 @@
     form {
       width: 100%;
       margin: 42px auto 0;
+
+      input {
+        width: 290px;
+      }
+
+      input[type="tel"] {
+        margin-top: 36px;
+      }
     }
 
-    .contacts__feedback_input_name,
-    .contacts__feedback_input_phone,
     .contacts__feedback_submit {
       width: 290px;
-    }
-
-    .contacts__feedback_input_phone {
-      margin-top: 36px;
-    }
-
-    .contacts__feedback_submit {
       margin-top: 38px;
     }
 

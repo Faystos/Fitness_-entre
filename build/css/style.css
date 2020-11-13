@@ -1742,6 +1742,42 @@ a {
   width: 420px;
   padding: 0 5px;
   margin-top: 48px; }
+  .contacts form input {
+    width: 190px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    padding-bottom: 6px;
+    color: #ffffff;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px; }
+    .contacts form input::-webkit-input-placeholder {
+      color: #ffffff;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 16px; }
+    .contacts form input::-moz-placeholder {
+      color: #ffffff;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 16px; }
+    .contacts form input:-ms-input-placeholder {
+      color: #ffffff;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 16px; }
+    .contacts form input::-ms-input-placeholder {
+      color: #ffffff;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 16px; }
+    .contacts form input::placeholder {
+      color: #ffffff;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 16px; }
 
 .contacts .contacts__feedback_block_input {
   display: -webkit-box;
@@ -1752,49 +1788,6 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-
-.contacts .contacts__feedback_input_name,
-.contacts .contacts__feedback_input_phone {
-  width: 190px;
-  background: transparent;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #74819c;
-  padding-bottom: 6px;
-  color: #ffffff;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px; }
-  .contacts .contacts__feedback_input_name::-webkit-input-placeholder,
-  .contacts .contacts__feedback_input_phone::-webkit-input-placeholder {
-    color: #ffffff;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 16px; }
-  .contacts .contacts__feedback_input_name::-moz-placeholder,
-  .contacts .contacts__feedback_input_phone::-moz-placeholder {
-    color: #ffffff;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 16px; }
-  .contacts .contacts__feedback_input_name:-ms-input-placeholder,
-  .contacts .contacts__feedback_input_phone:-ms-input-placeholder {
-    color: #ffffff;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 16px; }
-  .contacts .contacts__feedback_input_name::-ms-input-placeholder,
-  .contacts .contacts__feedback_input_phone::-ms-input-placeholder {
-    color: #ffffff;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 16px; }
-  .contacts .contacts__feedback_input_name::placeholder,
-  .contacts .contacts__feedback_input_phone::placeholder {
-    color: #ffffff;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 16px; }
 
 .contacts .contacts__feedback_submit {
   padding: 0;
@@ -1906,9 +1899,8 @@ a {
       margin-top: 42px;
       padding-left: 7px;
       padding-right: 7px; }
-    .contacts .contacts__feedback_input_name,
-    .contacts .contacts__feedback_input_phone {
-      width: 206px; }
+      .contacts form input {
+        width: 206px; }
     .contacts .contacts__block_address {
       width: 100%;
       padding-left: 132px; }
@@ -1954,13 +1946,12 @@ a {
   .contacts form {
     width: 100%;
     margin: 42px auto 0; }
-  .contacts .contacts__feedback_input_name,
-  .contacts .contacts__feedback_input_phone,
+    .contacts form input {
+      width: 290px; }
+    .contacts form input[type="tel"] {
+      margin-top: 36px; }
   .contacts .contacts__feedback_submit {
-    width: 290px; }
-  .contacts .contacts__feedback_input_phone {
-    margin-top: 36px; }
-  .contacts .contacts__feedback_submit {
+    width: 290px;
     margin-top: 38px; }
   .contacts .contacts__block_address {
     padding-left: 15px; }
