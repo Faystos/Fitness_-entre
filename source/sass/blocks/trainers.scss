@@ -33,14 +33,16 @@
   }
 
   .trainers__block_description {
-    width: 357px;
+    width: 359px;
     margin-top: 38px;
 
     p {
-      font-family: $main-font-Light;
+      width: 100%;
+      font-family: $main-font;
+      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
-      letter-spacing: 0;
+      letter-spacing: -0.1px;
       margin: 0 0 10px 0;
     }
   }
@@ -99,6 +101,8 @@
 
       p {
         margin: 0;
+        letter-spacing: -0.2px;
+
       }
 
       p:last-of-type {
@@ -172,6 +176,7 @@
 
       p {
         text-align: left;
+        letter-spacing: -0.1px;
       }
     }
 

@@ -71,7 +71,8 @@
     color: $main-color;
     margin-left: 34px;
 
-    h4 {
+    span {
+      display: block;
       font-family: $secondary-font-bold;
       font-size: 22px;
       margin-bottom: 12px;
@@ -94,12 +95,13 @@
     margin: -76px auto 0;
     padding: 55px 5px 0;
 
-    h4 {
+    span:first-of-type {
       font-size: 74px;
       margin-bottom: 6px;
     }
 
-    h5 {
+    span {
+      display: block;
       font-size: 26px;
       margin-bottom: 40px;
     }
@@ -166,7 +168,7 @@
     .advantages__block_text {
       margin-left: 21px;
 
-      h4 {
+      span {
         font-size: 20px;
         margin-bottom: 7px;
       }
@@ -182,7 +184,7 @@
       margin: 43px auto 0;
       padding-top: 33px;
 
-      h5 {
+      span {
         font-size: 22px;
         margin-bottom: 18px;
       }
@@ -248,11 +250,11 @@
       margin-top: 2px;
       padding-top: 38px;
 
-      h4 {
+      span:first-of-type {
         margin-bottom: 0;
       }
 
-      h5 {
+      span {
         margin-bottom: 14px;
       }
     }

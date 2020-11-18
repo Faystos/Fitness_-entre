@@ -195,13 +195,25 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 28px 103px; }
-  .header .header__wrap a {
+    padding: 20px 103px 28px; }
+  .header a {
     font-family: "Bebas", "Tahoma", sans-serif;
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 1px;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-top: 8px; }
+  .header .header__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 4px; }
+    .header .header__phone a {
+      margin-top: 4px; }
   .header .header__tel:hover {
     opacity: 0.6; }
   .header .header__tel:active {
@@ -212,8 +224,8 @@ a {
       .header .header__wrap {
         min-width: 768px;
         max-width: 860px;
-        padding: 38px 45px; }
-      .header .header__wrap a {
+        padding: 30px 45px 38px; }
+      .header a {
         font-size: 24px;
         line-height: 24px;
         letter-spacing: 0.6px; } }
@@ -221,7 +233,7 @@ a {
     .header .header__wrap {
       min-width: 320px;
       max-width: 480px;
-      padding: 18px 15px; }
+      padding: 10px 15px 18px; }
     .header .header__wrap a {
       font-size: 20px;
       line-height: 20px; } }
@@ -424,13 +436,15 @@ a {
       line-height: 27px;
       margin-top: 11px; }
   .trainers .trainers__block_description {
-    width: 357px;
+    width: 359px;
     margin-top: 38px; }
     .trainers .trainers__block_description p {
-      font-family: "Roboto Condensed Light", "Arial", sans-serif;
+      width: 100%;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-weight: 300;
       font-size: 16px;
       line-height: 24px;
-      letter-spacing: 0;
+      letter-spacing: -0.1px;
       margin: 0 0 10px 0; }
   .trainers .trainers__block_img {
     margin: 0 0 0 54px;
@@ -479,7 +493,8 @@ a {
         width: 100%;
         margin: 33px auto 0 auto; }
         .trainers .trainers__block_description p {
-          margin: 0; }
+          margin: 0;
+          letter-spacing: -0.2px; }
         .trainers .trainers__block_description p:last-of-type {
           display: none; }
       .trainers .trainers__block_img {
@@ -527,7 +542,8 @@ a {
         margin-top: 24px;
         padding-right: 27px; }
         .trainers .trainers__block_description p {
-          text-align: left; }
+          text-align: left;
+          letter-spacing: -0.1px; }
       .trainers .trainers__block_img {
         max-width: 390px;
         margin: 33px auto 0; }
@@ -715,6 +731,9 @@ a {
           font-size: 18px;
           margin: 0 25px; }
       .subscription .subscription__tabs {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 57px; }
       .subscription .subscription__tab {
         width: 442px;
@@ -965,7 +984,7 @@ a {
   padding-top: 55px;
   padding-bottom: 120px; }
   .coaches .coaches__wrap {
-    max-width: 1291px;
+    max-width: 1272px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative; }
@@ -974,7 +993,7 @@ a {
     font-size: 49px;
     letter-spacing: 2px;
     color: #102654;
-    margin-left: 47px; }
+    margin-left: 38px; }
   .coaches .coaches__slider_block {
     width: 1160px;
     padding: 0;
@@ -992,9 +1011,13 @@ a {
     -webkit-transition: right 0.5s;
     transition: right 0.5s; }
   .coaches .coaches__slider_control {
-    width: 97%;
+    width: 100%;
+    height: 23px;
     position: absolute;
-    top: 26.5%; }
+    left: 50%;
+    top: 26.5%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
   .coaches .coaches__button_next,
   .coaches .coaches__button_back {
     font-size: 0;
@@ -1020,11 +1043,11 @@ a {
     .coaches .coaches__button_back:active {
       opacity: 0.8; }
   .coaches .coaches__button_back {
-    left: -6px;
+    left: 4px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
   .coaches .coaches__button_next {
-    right: -6px;
+    right: 4px;
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); }
   .coaches .coaches__slider_item {
@@ -1206,7 +1229,8 @@ a {
   .advantages .advantages__block_text {
     color: #102654;
     margin-left: 34px; }
-    .advantages .advantages__block_text h4 {
+    .advantages .advantages__block_text span {
+      display: block;
       font-family: "Roboto Condensed Bold", "Aria", sans-serif;
       font-size: 22px;
       margin-bottom: 12px; }
@@ -1223,10 +1247,11 @@ a {
     text-align: center;
     margin: -76px auto 0;
     padding: 55px 5px 0; }
-    .advantages .advantages__single_advantage h4 {
+    .advantages .advantages__single_advantage span:first-of-type {
       font-size: 74px;
       margin-bottom: 6px; }
-    .advantages .advantages__single_advantage h5 {
+    .advantages .advantages__single_advantage span {
+      display: block;
       font-size: 26px;
       margin-bottom: 40px; }
     .advantages .advantages__single_advantage p {
@@ -1264,7 +1289,7 @@ a {
           margin-left: 8px; }
       .advantages .advantages__block_text {
         margin-left: 21px; }
-        .advantages .advantages__block_text h4 {
+        .advantages .advantages__block_text span {
           font-size: 20px;
           margin-bottom: 7px; }
         .advantages .advantages__block_text p {
@@ -1274,7 +1299,7 @@ a {
         min-height: 239px;
         margin: 43px auto 0;
         padding-top: 33px; }
-        .advantages .advantages__single_advantage h5 {
+        .advantages .advantages__single_advantage span {
           font-size: 22px;
           margin-bottom: 18px; } }
   @media (max-width: 767px) {
@@ -1325,9 +1350,9 @@ a {
         max-width: 320px;
         margin-top: 2px;
         padding-top: 38px; }
-        .advantages .advantages__single_advantage h4 {
+        .advantages .advantages__single_advantage span:first-of-type {
           margin-bottom: 0; }
-        .advantages .advantages__single_advantage h5 {
+        .advantages .advantages__single_advantage span {
           margin-bottom: 14px; } }
 
 .stocks {
@@ -1390,6 +1415,8 @@ a {
         opacity: 0.6; }
       .stocks .stocks__main_text a:active {
         opacity: 0.8; }
+  .stocks .stocks__main_image img {
+    height: 100%; }
   .stocks .stocks__description_stock {
     width: 560px;
     display: -webkit-box;
@@ -1461,8 +1488,7 @@ a {
       .stocks .stocks__main_text {
         width: 41.1%; }
       .stocks .stocks__main_image img {
-        width: 399px;
-        height: 462px; }
+        width: 399px; }
       .stocks .stocks__description_stock {
         width: 100%;
         -webkit-box-orient: horizontal;
@@ -1519,8 +1545,7 @@ a {
         .stocks .stocks__main_text a {
           margin: 35px auto 0; }
       .stocks .stocks__main_image img {
-        width: 290px;
-        height: 299px; }
+        width: 290px; }
       .stocks .stocks__description_stock {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1884,25 +1909,29 @@ a {
   .contacts {
     padding-bottom: 67px; }
     .contacts .contacts__wrap {
-      max-width: 768px;
+      width: 100%;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
     .contacts .contacts__block_feedback {
       width: 100%;
-      padding-left: 126px; }
+      padding-left: 20px;
+      padding-right: 20px; }
     .contacts .contacts__feedback_title {
-      font-size: 42px; }
+      font-size: 42px;
+      margin-left: 15.5%; }
     .contacts form {
       width: 485px;
       margin-top: 42px;
-      padding-left: 7px;
+      margin-left: 14.5%;
       padding-right: 7px; }
       .contacts form input {
         width: 206px; }
     .contacts .contacts__block_address {
-      width: 100%;
+      width: 768px;
+      margin-left: auto;
+      margin-right: auto;
       padding-left: 132px; }
     .contacts .contacts__address_title {
       font-size: 42px; }
@@ -1936,15 +1965,19 @@ a {
 
 @media (max-width: 767px) {
   .contacts .contacts__wrap {
-    max-width: 320px; }
+    width: 100%; }
   .contacts .contacts__block_feedback {
+    width: 100%;
     padding-top: 67px;
     padding-left: 7px; }
   .contacts .contacts__feedback_title {
+    width: 274px;
+    margin: 0 auto;
     font-size: 32px;
     letter-spacing: 1px; }
   .contacts form {
-    width: 100%;
+    width: 313px;
+    padding: 0 0 0 6px;
     margin: 42px auto 0; }
     .contacts form input {
       width: 290px; }
@@ -1954,6 +1987,7 @@ a {
     width: 290px;
     margin-top: 38px; }
   .contacts .contacts__block_address {
+    width: 320px;
     padding-left: 15px; }
   .contacts .contacts__address_title {
     font-size: 32px;

@@ -68,6 +68,12 @@
     }
   }
 
+  .stocks__main_image {
+    img {
+      height: 100%;
+    }
+  }
+
   .stocks__description_stock {
     width: 560px;
     display: flex;
@@ -146,7 +152,7 @@
     .stocks__main_image {
       img {
         width: 399px;
-        height: 462px;
+        // height: 462px;
       }
     }
 
@@ -237,7 +243,7 @@
     .stocks__main_image {
       img {
         width: 290px;
-        height: 299px;
+        // height: 299px;
       }
     }
 

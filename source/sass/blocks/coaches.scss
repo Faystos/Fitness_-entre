@@ -4,7 +4,7 @@
   padding-bottom: 120px;
 
   .coaches__wrap {
-    max-width: 1291px;
+    max-width: 1272px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -15,7 +15,7 @@
     font-size: 49px;
     letter-spacing: 2px;
     color: $main-color;
-    margin-left: 47px;
+    margin-left: 38px;
   }
 
   .coaches__slider_block {
@@ -36,9 +36,12 @@
   }
 
   .coaches__slider_control {
-    width: 97%;
+    width: 100%;
+    height: 23px;
     position: absolute;
+    left: 50%;
     top: 26.5%;
+    transform: translateX(-50%);
   }
 
   .coaches__button_next,
@@ -56,12 +59,12 @@
   }
 
   .coaches__button_back {
-    left: -6px;
+    left: 4px;
     transform: rotate(-45deg);
   }
 
   .coaches__button_next {
-    right: -6px;
+    right: 4px;
     transform: rotate(135deg);
   }
 

@@ -139,24 +139,26 @@
     padding-bottom: 67px;
 
     .contacts__wrap {
-      max-width: 768px;
+      width: 100%;
       flex-direction: column;
     }
 
     // Блок с формой
     .contacts__block_feedback {
       width: 100%;
-      padding-left: 126px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .contacts__feedback_title {
       font-size: 42px;
+      margin-left: 15.5%;
     }
 
     form {
       width: 485px;
       margin-top: 42px;
-      padding-left: 7px;
+      margin-left: 14.5%;
       padding-right: 7px;
 
       input {
@@ -166,7 +168,9 @@
 
     // Блок с адресами
     .contacts__block_address {
-      width: 100%;
+      width: 768px;
+      margin-left: auto;
+      margin-right: auto;
       padding-left: 132px;
     }
 
@@ -212,22 +216,27 @@
 
   @media (max-width: $table-width) {
     .contacts__wrap {
-      max-width: 320px;
+      // max-width: 320px;
+      width: 100%;
     }
 
     //Блок с формой
     .contacts__block_feedback {
+      width: 100%;
       padding-top: 67px;
       padding-left: 7px;
     }
 
     .contacts__feedback_title {
+      width: 274px;
+      margin: 0 auto;
       font-size: 32px;
       letter-spacing: 1px;
     }
 
     form {
-      width: 100%;
+      width: 313px;
+      padding: 0 0 0 6px;
       margin: 42px auto 0;
 
       input {
@@ -246,6 +255,7 @@
 
     // Блок с адресами
     .contacts__block_address {
+      width: 320px;
       padding-left: 15px;
     }
 
