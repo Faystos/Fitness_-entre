@@ -21,7 +21,7 @@
   }
 
   .footer__link {
-    min-width: 431px;
+    min-width: 435px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,11 +32,12 @@
 
     a {
       @include opacity-link;
+      margin-right: 5px;
     }
   }
 
   .footer__social {
-    width: 136px;
+    min-width: 136px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 -25px 0 0;
@@ -67,14 +68,14 @@
     }
 
     .footer__link {
-      min-width: 391px;
+      min-width: 395px;
       font-size: 14px;
       line-height: 16px;
       margin: 8px 22px 0 43px;
     }
 
     .footer__social {
-      width: 121px;
+      min-width: 121px;
       margin: 3px -21px 0 0;
 
       a {
@@ -105,36 +106,40 @@
       flex-wrap: wrap;
       font-size: 16px;
       line-height: 19px;
-    }
 
-    .footer__link_services {
-      order: 0;
-      margin-right: 21px;
-      margin-bottom: 20px;
-    }
+      a {
+        margin: 0;
+      }
 
-    .footer__link_season {
-      order: 3;
-      margin-right: 32px;
-    }
+      .footer__link_services {
+        order: 0;
+        margin-right: 21px;
+        margin-bottom: 20px;
+      }
 
-    .footer__link_coaches {
-      order: 2;
-      margin-right: 22px;
-    }
+      .footer__link_season {
+        order: 3;
+        margin-right: 32px;
+      }
 
-    .footer__link_schedule {
-      order: 4;
-    }
+      .footer__link_coaches {
+        order: 2;
+        margin-right: 22px;
+      }
 
-    .footer__link_stocks {
-      position: absolute;
-      top: -40px;
-      right: 38px;
+      .footer__link_schedule {
+        order: 4;
+      }
+
+      .footer__link_stocks {
+        position: absolute;
+        top: -40px;
+        right: 38px;
+      }
     }
 
     .footer__social {
-      width: 207px;
+      min-width: 207px;
       margin: 35px 0 0 17px;
 
       a {

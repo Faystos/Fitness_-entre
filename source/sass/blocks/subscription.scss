@@ -69,7 +69,8 @@
       border-bottom: 2px solid #d10a42;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #d10a42;
     }
 

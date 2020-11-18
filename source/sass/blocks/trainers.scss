@@ -63,10 +63,16 @@
   .trainers__video_play {
     @include button-reset;
     @include hide-font;
+    @include opacity-link;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .trainers__video_play:focus {
+    border-radius: 50%;
+    border: 1px solid #d10a42;
   }
 
   .trainers__play_icon {
@@ -102,7 +108,6 @@
       p {
         margin: 0;
         letter-spacing: -0.2px;
-
       }
 
       p:last-of-type {

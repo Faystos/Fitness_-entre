@@ -69,16 +69,19 @@
     display: flex;
     justify-content: center;
     background: #1c3374;
-    padding: 60px 5px 5px 16px;
+    padding: 60px 5px 45px 16px;
   }
 
   .reviews__slider_img {
-    width: 80px;
+    width: 86px;
     height: 80px;
-    border-radius: 50%;
     overflow: hidden;
-    margin-right: 14px;
+    margin-right: 10px;
     margin-top: 2px;
+
+    img {
+      border-radius: 50%;
+    }
   }
 
   .reviews__slider_text {
@@ -166,16 +169,18 @@
       width: 226px;
       min-height: 335px;
       padding-top: 40px;
+      padding-bottom: 14px;
     }
 
     .reviews__slider_img {
-      width: 68px;
+      width: 86px;
       height: 68px;
       margin: 0;
 
       img {
         width: 68px;
         height: 68px;
+        margin-left: 9px;
       }
     }
 
@@ -187,7 +192,7 @@
       h4 {
         width: 62px;
         font-size: 20px;
-        margin: 9px 0 0 15px;
+        margin: 9px 0 0 7px;
         line-height: 26px;
       }
 
@@ -196,7 +201,7 @@
         width: 176px;
         font-size: 16px;
         margin-top: 22px;
-        margin-left: -84px;
+        margin-left: -92px;
       }
     }
   }

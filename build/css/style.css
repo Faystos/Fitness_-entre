@@ -228,7 +228,10 @@ a {
       .header a {
         font-size: 24px;
         line-height: 24px;
-        letter-spacing: 0.6px; } }
+        letter-spacing: 0.6px; }
+      .header .header__logo {
+        width: 82px;
+        height: 17px; } }
   @media (max-width: 767px) {
     .header .header__wrap {
       min-width: 320px;
@@ -236,7 +239,10 @@ a {
       padding: 10px 15px 18px; }
     .header .header__wrap a {
       font-size: 20px;
-      line-height: 20px; } }
+      line-height: 20px; }
+    .header .header__logo {
+      width: 68px;
+      height: 15px; } }
 
 .description {
   width: 100%;
@@ -471,6 +477,13 @@ a {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+    .trainers .trainers__video_play:hover {
+      opacity: 0.6; }
+    .trainers .trainers__video_play:active {
+      opacity: 0.8; }
+  .trainers .trainers__video_play:focus {
+    border-radius: 50%;
+    border: 1px solid #d10a42; }
   .trainers .trainers__play_icon {
     fill: none; }
   @media (max-width: 1199px) {
@@ -619,7 +632,7 @@ a {
     .subscription .subscription__tab_control--active {
       color: #102654;
       border-bottom: 2px solid #d10a42; }
-    .subscription .subscription__tab_control:hover {
+    .subscription .subscription__tab_control:hover, .subscription .subscription__tab_control:focus {
       color: #d10a42; }
     .subscription .subscription__tab_control:active {
       color: rgba(16, 38, 84, 0.5); }
@@ -1654,14 +1667,15 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     background: #1c3374;
-    padding: 60px 5px 5px 16px; }
+    padding: 60px 5px 45px 16px; }
   .reviews .reviews__slider_img {
-    width: 80px;
+    width: 86px;
     height: 80px;
-    border-radius: 50%;
     overflow: hidden;
-    margin-right: 14px;
+    margin-right: 10px;
     margin-top: 2px; }
+    .reviews .reviews__slider_img img {
+      border-radius: 50%; }
   .reviews .reviews__slider_text {
     width: 340px;
     color: #ffffff;
@@ -1715,14 +1729,16 @@ a {
       .reviews .reviews__slider_item {
         width: 226px;
         min-height: 335px;
-        padding-top: 40px; }
+        padding-top: 40px;
+        padding-bottom: 14px; }
       .reviews .reviews__slider_img {
-        width: 68px;
+        width: 86px;
         height: 68px;
         margin: 0; }
         .reviews .reviews__slider_img img {
           width: 68px;
-          height: 68px; }
+          height: 68px;
+          margin-left: 9px; }
       .reviews .reviews__slider_text {
         width: 87px;
         margin: 0;
@@ -1731,14 +1747,14 @@ a {
         .reviews .reviews__slider_text h4 {
           width: 62px;
           font-size: 20px;
-          margin: 9px 0 0 15px;
+          margin: 9px 0 0 7px;
           line-height: 26px; }
         .reviews .reviews__slider_text p {
           text-align: center;
           width: 176px;
           font-size: 16px;
           margin-top: 22px;
-          margin-left: -84px; } }
+          margin-left: -92px; } }
 
 .contacts .contacts__wrap {
   width: 100%;
@@ -2027,7 +2043,7 @@ a {
     line-height: 26px;
     letter-spacing: 1px; }
   .footer .footer__link {
-    min-width: 431px;
+    min-width: 435px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2040,12 +2056,14 @@ a {
     font-size: 14px;
     line-height: 16px;
     margin: 5px 5px 0 26px; }
-    .footer .footer__link a:hover {
-      opacity: 0.6; }
-    .footer .footer__link a:active {
-      opacity: 0.8; }
+    .footer .footer__link a {
+      margin-right: 5px; }
+      .footer .footer__link a:hover {
+        opacity: 0.6; }
+      .footer .footer__link a:active {
+        opacity: 0.8; }
   .footer .footer__social {
-    width: 136px;
+    min-width: 136px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2073,12 +2091,12 @@ a {
         font-size: 24px;
         letter-spacing: 0.5px; }
       .footer .footer__link {
-        min-width: 391px;
+        min-width: 395px;
         font-size: 14px;
         line-height: 16px;
         margin: 8px 22px 0 43px; }
       .footer .footer__social {
-        width: 121px;
+        min-width: 121px;
         margin: 3px -21px 0 0; }
         .footer .footer__social a {
           margin: 0 20px 0 0; } }
@@ -2104,32 +2122,34 @@ a {
             flex-wrap: wrap;
         font-size: 16px;
         line-height: 19px; }
-      .footer .footer__link_services {
-        -webkit-box-ordinal-group: 1;
-            -ms-flex-order: 0;
-                order: 0;
-        margin-right: 21px;
-        margin-bottom: 20px; }
-      .footer .footer__link_season {
-        -webkit-box-ordinal-group: 4;
-            -ms-flex-order: 3;
-                order: 3;
-        margin-right: 32px; }
-      .footer .footer__link_coaches {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2;
-        margin-right: 22px; }
-      .footer .footer__link_schedule {
-        -webkit-box-ordinal-group: 5;
-            -ms-flex-order: 4;
-                order: 4; }
-      .footer .footer__link_stocks {
-        position: absolute;
-        top: -40px;
-        right: 38px; }
+        .footer .footer__link a {
+          margin: 0; }
+        .footer .footer__link .footer__link_services {
+          -webkit-box-ordinal-group: 1;
+              -ms-flex-order: 0;
+                  order: 0;
+          margin-right: 21px;
+          margin-bottom: 20px; }
+        .footer .footer__link .footer__link_season {
+          -webkit-box-ordinal-group: 4;
+              -ms-flex-order: 3;
+                  order: 3;
+          margin-right: 32px; }
+        .footer .footer__link .footer__link_coaches {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2;
+          margin-right: 22px; }
+        .footer .footer__link .footer__link_schedule {
+          -webkit-box-ordinal-group: 5;
+              -ms-flex-order: 4;
+                  order: 4; }
+        .footer .footer__link .footer__link_stocks {
+          position: absolute;
+          top: -40px;
+          right: 38px; }
       .footer .footer__social {
-        width: 207px;
+        min-width: 207px;
         margin: 35px 0 0 17px; }
         .footer .footer__social a {
           margin: 3px 33px 0 0; }
