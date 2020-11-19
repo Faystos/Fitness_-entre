@@ -5,6 +5,7 @@
   .stocks__wrap {
     width: 1160px;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .stocks__title {
@@ -87,7 +88,7 @@
     border: 7px solid transparent;
     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
-    padding: 5px;
+    padding: 5px 5px 15px 5px;
     color: #1c3374;
 
     h4 {
@@ -152,7 +153,6 @@
     .stocks__main_image {
       img {
         width: 399px;
-        // height: 462px;
       }
     }
 
@@ -243,7 +243,6 @@
     .stocks__main_image {
       img {
         width: 290px;
-        // height: 299px;
       }
     }
 

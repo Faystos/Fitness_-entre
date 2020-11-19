@@ -1,8 +1,6 @@
 .description {
   width: 100%;
-  padding-top: 51px;
   padding-bottom: 51px;
-
   background-image: url("../img/bg/description/description_gradient_bg_desc.png");
   background-size: cover;
 
@@ -10,15 +8,51 @@
     background-image: url("../img/bg/description/description_gradient_bg_desc@2x.png");
   }
 
-  .description__wrap {
+  //Header
+  .description__wrap_block_header {
     max-width: 1366px;
-    min-height: 556px;
+    margin: 0 auto -31px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 103px 28px;
+    overflow: hidden;
+
+    a {
+      font-family: $title-font;
+      font-size: 26px;
+      line-height: 26px;
+      letter-spacing: 1px;
+      color: $auxiliary-color;
+      margin-top: 8px;
+    }
+  }
+
+  .description__header_phone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+
+    a {
+      margin-top: 4px;
+
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+        outline: none;
+      }
+    }
+  }
+  // *******************************************************************
+
+  .description__wrap_block_description {
+    max-width: 1366px;
     margin: 0 auto;
     padding-left: 103px;
     padding-right: 103px;
     display: flex;
     justify-content: space-between;
     text-align: right;
+    overflow: hidden;
   }
 
   .description__text {
@@ -97,10 +131,29 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding-top: 82px;
-    height: 554px;
+    min-height: 554px;
 
-    .description__wrap {
+    //Header
+    .description__wrap_block_header {
+      min-width: 768px;
+      max-width: 860px;
+      padding: 30px 45px 38px;
+      margin-bottom: -18px;
+
+      a {
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+      }
+    }
+
+    .description__header_logo {
+      width: 82px;
+      height: 17px;
+    }
+    // *******************************************************************
+
+    .description__wrap_block_description {
       min-width: 768px;
       max-width: 860px;
       padding-left: 45px;
@@ -153,9 +206,27 @@
   }
 
   @media (max-width: $table-width) {
-    height: 535px;
+    min-height: 491px;
 
-    .description__wrap {
+    //Header
+    .description__wrap_block_header {
+      min-width: 320px;
+      max-width: 480px;
+      padding: 10px 15px 18px;
+
+      a {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+
+    .description__header_logo {
+      width: 68px;
+      height: 15px;
+    }
+    // *******************************************************************
+
+    .description__wrap_block_description {
       min-width: 320px;
       width: 100%;
       padding-left: 15px;
@@ -164,6 +235,7 @@
 
     .description__text {
       max-width: 290px;
+      height: 384px;
       margin: 0 auto;
       padding-top: 71px;
     }

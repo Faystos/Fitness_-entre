@@ -4,6 +4,7 @@
     max-width: 1366px;
     margin: 0 auto;
     display: flex;
+    overflow: hidden;
   }
 
   //Блок с формой
@@ -40,6 +41,7 @@
       font-family: $main-font;
       font-size: 14px;
       line-height: 16px;
+      border-radius: 0;
 
       &::placeholder {
         color: $auxiliary-color;

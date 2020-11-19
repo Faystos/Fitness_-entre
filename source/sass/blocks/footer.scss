@@ -10,6 +10,7 @@
     padding: 0 10px;
     margin: 0 auto;
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
   }
 
@@ -21,18 +22,18 @@
   }
 
   .footer__link {
-    min-width: 435px;
+    min-width: 445px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     font-family: $main-font;
     font-size: 14px;
     line-height: 16px;
-    margin: 5px 5px 0 26px;
+    margin: 5px -9px 0 26px;
 
     a {
       @include opacity-link;
-      margin-right: 5px;
+      margin-right: 15px;
     }
   }
 
@@ -68,10 +69,10 @@
     }
 
     .footer__link {
-      min-width: 395px;
+      min-width: 405px;
       font-size: 14px;
       line-height: 16px;
-      margin: 8px 22px 0 43px;
+      margin: 8px 10px 0 43px;
     }
 
     .footer__social {

@@ -8,6 +8,7 @@
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
+    overflow: hidden;
   }
 
   .coaches__title {
@@ -56,6 +57,10 @@
     border-top: 1px solid #afafaf;
     border-left: 1px solid #afafaf;
     cursor: pointer;
+
+    &:focus {
+      border-color: #d10a42;
+    }
   }
 
   .coaches__button_back {
