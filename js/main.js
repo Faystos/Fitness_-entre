@@ -24,14 +24,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var title = document.querySelector('.description__text p'); // let detect = navigator.userAgent;
+var title = document.querySelector('.description__text h1'); // let detect = navigator.userAgent;
 
 var detect = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 console.log(detect);
 
 if (detect) {
-  title.style.letterSpacing = 'none';
-  title.textContent = "IOS";
+  title.style.letterSpacing = '0';
 }
 
 'use strict';
