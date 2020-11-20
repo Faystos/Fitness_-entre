@@ -1,11 +1,22 @@
 'use strict';
 
-let title = document.querySelector('.description__text h1');
+(function(){
+class DetectIos {
 
-// let detect = navigator.userAgent;
-let detect = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-console.log(detect);
+  constructor (element) {
+    this.detect = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+    this.element = document.querySelector(`.${element}`);
+    this.detectedIos();
+  }
 
-if (detect) {
-  title.style.letterSpacing = '0';
+  detectedIos() {
+    if (this.detect) {
+      this.element.style.letterSpacing = '0';
+    }
+  }
 }
+})();
+
+
+
+

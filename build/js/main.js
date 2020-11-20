@@ -16,22 +16,36 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+(function () {
+  var DetectIos = /*#__PURE__*/function () {
+    function DetectIos(element) {
+      _classCallCheck(this, DetectIos);
 
-var title = document.querySelector('.description__text h1'); // let detect = navigator.userAgent;
+      this.detect = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+      this.element = document.querySelector(".".concat(element));
+      this.detectedIos();
+    }
 
-var detect = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-console.log(detect);
+    _createClass(DetectIos, [{
+      key: "detectedIos",
+      value: function detectedIos() {
+        if (this.detect) {
+          this.element.style.letterSpacing = '0';
+        }
+      }
+    }]);
 
-if (detect) {
-  title.style.letterSpacing = '0';
-}
+    return DetectIos;
+  }();
+})();
 
 'use strict';
 
