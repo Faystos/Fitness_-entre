@@ -16,7 +16,7 @@ class DetectIos {
   }
 }
 
-new DetectIos();
+new DetectIos('description__text h1');
 })();
 
 
