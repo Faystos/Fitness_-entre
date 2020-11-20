@@ -46,7 +46,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     return DetectIos;
   }();
 
-  new DetectIos();
+  new DetectIos('description__text h1');
 })();
 
 'use strict';
