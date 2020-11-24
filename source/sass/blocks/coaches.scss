@@ -2,6 +2,8 @@
   width: 100%;
   padding-top: 55px;
   padding-bottom: 120px;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
 
   .coaches__wrap {
     max-width: 1272px;
@@ -236,10 +238,12 @@
 
     .coaches__button_next {
       right: 17px;
+      margin: 0;
     }
 
     .coaches__button_back {
       left: 17px;
+      margin: 0;
     }
 
     .coaches__slider_block {

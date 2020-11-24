@@ -1051,7 +1051,9 @@ a {
 .coaches {
   width: 100%;
   padding-top: 55px;
-  padding-bottom: 120px; }
+  padding-bottom: 120px;
+  padding-left: 2.5px;
+  padding-right: 2.5px; }
   .coaches .coaches__wrap {
     max-width: 1272px;
     margin: 0 auto;
@@ -1237,9 +1239,11 @@ a {
         width: 14px;
         height: 14px; }
       .coaches .coaches__button_next {
-        right: 17px; }
+        right: 17px;
+        margin: 0; }
       .coaches .coaches__button_back {
-        left: 17px; }
+        left: 17px;
+        margin: 0; }
       .coaches .coaches__slider_block {
         width: 226px; }
       .coaches .coaches__sliders {
