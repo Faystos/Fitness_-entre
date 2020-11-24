@@ -1065,7 +1065,7 @@ a {
     color: #102654;
     margin-left: 38px; }
   .coaches .coaches__slider_block {
-    width: 1160px;
+    max-width: 1160px;
     padding: 0;
     margin-top: 55px;
     overflow: hidden;
@@ -1118,11 +1118,13 @@ a {
   .coaches .coaches__button_back {
     left: 4px;
     -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
+            transform: rotate(-45deg);
+    margin-left: 2px; }
   .coaches .coaches__button_next {
     right: 4px;
     -webkit-transform: rotate(135deg);
-            transform: rotate(135deg); }
+            transform: rotate(135deg);
+    margin-right: 2px; }
   .coaches .coaches__slider_item {
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -1505,7 +1507,8 @@ a {
   .stocks .stocks__description_two {
     width: 100%;
     min-height: 211px;
-    border: 7px solid transparent;
+    border-style: solid;
+    border-width: 7px;
     -o-border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
        border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
