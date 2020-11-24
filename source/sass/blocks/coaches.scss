@@ -20,7 +20,7 @@
   }
 
   .coaches__slider_block {
-    width: 1160px;
+    max-width: 1160px;
     padding: 0;
     margin-top: 55px;
     overflow: hidden;
@@ -66,11 +66,13 @@
   .coaches__button_back {
     left: 4px;
     transform: rotate(-45deg);
+    margin-left: 2px;
   }
 
   .coaches__button_next {
     right: 4px;
     transform: rotate(135deg);
+    margin-right: 2px;
   }
 
   .coaches__slider_item {
