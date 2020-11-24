@@ -262,6 +262,8 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 20px 103px 28px;
     overflow: hidden; }
     .description .description__wrap_block_header a {
