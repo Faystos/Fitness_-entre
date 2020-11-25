@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Фитнес центер в Омске">
+  <meta name="keywords" content="Фитнес, фитнес центер, спорт зал, спорт, спортиный фитнес центр в Омске, фитнес центр в Омске">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/bebas/bebas_neue_regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/bebas/bebas_neue_bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto_condensed/roboto_condensed_regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto_condensed/roboto_condensed_bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto_condensed/roboto_condensed_light.woff2" as="font" crossorigin="anonymous">
+  <title>Фитнес центер</title>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="visually-hidden">
+    <defs>
+      <linearGradient id="paint0_linear" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#ED0233"></stop>
+        <stop offset="1" stop-color="#003EB7"></stop>
+      </linearGradient>
+
+      <linearGradient id="paint1_linear" x1="14" y1="49.52" x2="54.1858" y2="9.18415" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#003D85"></stop>
+        <stop offset="0.885417" stop-color="#B80027"></stop>
+      </linearGradient>
+
+      <linearGradient id="paint3_linear" x1="-3" y1="3" x2="19.4438" y2="41.104" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#D10A42"></stop>
+        <stop offset="1" stop-color="#0041CA"></stop>
+      </linearGradient>
+
+      <linearGradient id="paint4_linear" x1="-2" y1="3" x2="29.023" y2="62.4222" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#D10A42"></stop>
+        <stop offset="1" stop-color="#0041CA"></stop>
+      </linearGradient>
+
+      <linearGradient id="paint5_linear" x1="-2" y1="3" x2="21.4754" y2="70.4479" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#D10A42"></stop>
+        <stop offset="1" stop-color="#0041CA"></stop>
+      </linearGradient>
+
+      <linearGradient id="paint6_linear" x1="-3" y1="2" x2="28.5181" y2="60.6935" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#D10A42"></stop>
+        <stop offset="1" stop-color="#0041CA"></stop>
+      </linearGradient>
+    </defs>
+
+    <symbol id="icon_trainers_video" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear)" stroke-opacity="0.2" stroke-width="2"></circle>
+      <circle cx="50" cy="50" r="36" fill="url(#paint1_linear)"></circle>
+      <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white"></path>
+    </symbol>
+    <symbol id="icon_subscription_rub" viewBox="0 0 30 42">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z" fill="#102654"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"></path>
+    </symbol>
+
+    <symbol id="icon_advantages_350" viewBox="0 0 103 53">
+      <path d="M10.0298 22.2896H14.7793C16.582 22.2896 17.8994 21.6655 18.7314 20.4175C19.5866 19.1463 20.0142 17.4591 20.0142 15.356C20.0142 13.3452 19.575 11.7852 18.6968 10.6758C17.8416 9.54329 16.686 8.97705 15.23 8.97705C13.8664 8.97705 12.7454 9.50863 11.8672 10.5718C11.012 11.6349 10.5845 12.9754 10.5845 14.5933H0.773438C0.773438 11.9585 1.37435 9.60107 2.57617 7.521C3.80111 5.41781 5.49984 3.77686 7.67236 2.59814C9.868 1.41943 12.2948 0.830078 14.9526 0.830078C19.5981 0.830078 23.2383 2.11279 25.873 4.67822C28.5078 7.24365 29.8252 10.7567 29.8252 15.2173C29.8252 17.5054 29.2243 19.6317 28.0225 21.5962C26.8438 23.5376 25.2837 25.0283 23.3423 26.0684C25.7228 27.0853 27.4909 28.6107 28.6465 30.6445C29.8252 32.6784 30.4146 35.082 30.4146 37.8555C30.4146 42.3392 28.9816 45.9331 26.1157 48.6372C23.2729 51.3413 19.5288 52.6934 14.8833 52.6934C10.5614 52.6934 7.04834 51.3644 4.34424 48.7065C1.66325 46.0256 0.322754 42.5125 0.322754 38.1675H10.1338C10.1338 39.9702 10.6076 41.484 11.5552 42.709C12.5028 43.9339 13.7046 44.5464 15.1606 44.5464C16.8478 44.5464 18.1768 43.9224 19.1475 42.6743C20.1413 41.4263 20.6382 39.7622 20.6382 37.6821C20.6382 32.7131 18.7083 30.217 14.8486 30.1938H10.0298V22.2896ZM38.2148 27.1777L40.7109 1.52344H65.1519V9.91309H48.7539L47.8525 20.7295C49.7477 19.4583 51.7007 18.8228 53.7114 18.8228C57.8716 18.8228 61.0726 20.3019 63.3145 23.2603C65.5794 26.2186 66.7119 30.4019 66.7119 35.8101C66.7119 40.8716 65.3714 44.9508 62.6904 48.0479C60.0094 51.1449 56.4271 52.6934 51.9434 52.6934C49.2855 52.6934 46.8241 52.0693 44.5591 50.8213C42.2941 49.5501 40.5029 47.7936 39.1855 45.5518C37.8913 43.3099 37.2326 40.7676 37.2095 37.9248H46.9165C47.0783 40.028 47.5983 41.6574 48.4766 42.813C49.3548 43.9686 50.4873 44.5464 51.874 44.5464C53.4919 44.5464 54.7399 43.7721 55.6182 42.2236C56.4964 40.652 56.9355 38.3177 56.9355 35.2207C56.9355 32.3086 56.404 30.113 55.3408 28.6338C54.3008 27.1546 52.8332 26.415 50.938 26.415C49.089 26.415 47.6561 27.0506 46.6392 28.3218L46.0151 29.1885L38.2148 27.1777ZM102.455 31.1299C102.455 38.1097 101.183 43.4486 98.6411 47.1465C96.1219 50.8444 92.5164 52.6934 87.8247 52.6934C83.1792 52.6934 79.5853 50.9022 77.043 47.3198C74.5238 43.7144 73.2179 38.5604 73.1255 31.8579V22.3242C73.1255 15.3675 74.3851 10.0518 76.9043 6.37695C79.4235 2.67904 83.0405 0.830078 87.7554 0.830078C92.4702 0.830078 96.0872 2.65592 98.6064 6.30762C101.126 9.95931 102.408 15.1711 102.455 21.9429V31.1299ZM92.6089 20.9028C92.6089 16.9276 92.216 13.9461 91.4302 11.9585C90.6444 9.97087 89.4194 8.97705 87.7554 8.97705C84.6353 8.97705 83.0174 12.6172 82.9019 19.8975V32.4819C82.9019 36.5496 83.2948 39.5773 84.0806 41.5649C84.8895 43.5526 86.1375 44.5464 87.8247 44.5464C89.4194 44.5464 90.5981 43.6219 91.3608 41.7729C92.1466 39.9009 92.5627 37.0465 92.6089 33.21V20.9028Z" fill="url(#paint5_linear)"></path>
+    </symbol>
+    <symbol id="icon_advantages_5" viewBox="0 0 65 52">
+      <path d="M1.29883 26.1777L3.79492 0.523438H28.2358V8.91309H11.8379L10.9365 19.7295C12.8317 18.4583 14.7847 17.8228 16.7954 17.8228C20.9556 17.8228 24.1566 19.3019 26.3984 22.2603C28.6634 25.2186 29.7959 29.4019 29.7959 34.8101C29.7959 39.8716 28.4554 43.9508 25.7744 47.0479C23.0934 50.1449 19.5111 51.6934 15.0273 51.6934C12.3695 51.6934 9.90804 51.0693 7.64307 49.8213C5.37809 48.5501 3.58691 46.7936 2.26953 44.5518C0.97526 42.3099 0.316569 39.7676 0.293457 36.9248H10.0005C10.1623 39.028 10.6823 40.6574 11.5605 41.813C12.4388 42.9686 13.5713 43.5464 14.958 43.5464C16.5758 43.5464 17.8239 42.7721 18.7021 41.2236C19.5804 39.652 20.0195 37.3177 20.0195 34.2207C20.0195 31.3086 19.488 29.113 18.4248 27.6338C17.3848 26.1546 15.9172 25.415 14.022 25.415C12.173 25.415 10.7401 26.0506 9.72314 27.3218L9.09912 28.1885L1.29883 26.1777ZM54.4102 22.7109H64.2212V31.8286H54.4102V45.9385H45.1191V31.8286H35.1348V22.7109H45.1191V9.19043H54.4102V22.7109Z" fill="url(#paint6_linear)"></path>
+    </symbol>
+    <symbol id="icon_advantages_70" viewBox="0 0 67 53">
+      <path d="M30.8999 7.17432L14.9526 52H4.58691L20.6035 9.67041H0.357422V1.52344H30.8999V7.17432ZM66.5386 31.1299C66.5386 38.1097 65.2674 43.4486 62.7251 47.1465C60.2059 50.8444 56.6004 52.6934 51.9087 52.6934C47.2632 52.6934 43.6693 50.9022 41.127 47.3198C38.6077 43.7144 37.3019 38.5604 37.2095 31.8579V22.3242C37.2095 15.3675 38.4691 10.0518 40.9883 6.37695C43.5075 2.67904 47.1245 0.830078 51.8394 0.830078C56.5542 0.830078 60.1712 2.65592 62.6904 6.30762C65.2096 9.95931 66.4924 15.1711 66.5386 21.9429V31.1299ZM56.6929 20.9028C56.6929 16.9276 56.3 13.9461 55.5142 11.9585C54.7284 9.97087 53.5034 8.97705 51.8394 8.97705C48.7192 8.97705 47.1014 12.6172 46.9858 19.8975V32.4819C46.9858 36.5496 47.3787 39.5773 48.1646 41.5649C48.9735 43.5526 50.2215 44.5464 51.9087 44.5464C53.5034 44.5464 54.6821 43.6219 55.4448 41.7729C56.2306 39.9009 56.6466 37.0465 56.6929 33.21V20.9028Z" fill="url(#paint4_linear)"></path>
+    </symbol>
+    <symbol id="icon_advantages_900" viewBox="0 0 102 53">
+      <path d="M19.3262 32.4819C17.2461 34.6082 14.9696 35.6714 12.4966 35.6714C8.65999 35.6714 5.63232 34.1344 3.41357 31.0605C1.21794 27.9635 0.120117 23.8381 0.120117 18.6841C0.120117 15.356 0.744141 12.3167 1.99219 9.56641C3.24023 6.79297 4.97363 4.64355 7.19238 3.11816C9.43424 1.59277 11.9303 0.830078 14.6807 0.830078C17.5234 0.830078 20.0542 1.67367 22.2729 3.36084C24.4917 5.04801 26.2135 7.47477 27.4385 10.6411C28.6634 13.7843 29.2759 17.3667 29.2759 21.3882V24.959C29.2759 33.5566 27.3807 40.2822 23.5903 45.1357C19.8231 49.9661 14.4727 52.4276 7.53906 52.52H6.53369V44.061H7.19238C11.029 44.0379 13.9064 43.0441 15.8247 41.0796C17.7661 39.1151 18.9333 36.2492 19.3262 32.4819ZM14.9927 27.9751C16.8879 27.9751 18.3786 26.6808 19.4648 24.0923V19.5854C19.4648 16.2804 19.0142 13.6919 18.1128 11.8198C17.2114 9.92464 16.0443 8.97705 14.6113 8.97705C13.2015 8.97705 12.0575 9.91309 11.1792 11.7852C10.3241 13.6341 9.89648 15.8991 9.89648 18.5801C9.89648 21.4922 10.3472 23.7918 11.2485 25.479C12.1499 27.1431 13.3979 27.9751 14.9927 27.9751ZM65.5386 31.1299C65.5386 38.1097 64.2674 43.4486 61.7251 47.1465C59.2059 50.8444 55.6004 52.6934 50.9087 52.6934C46.2632 52.6934 42.6693 50.9022 40.127 47.3198C37.6077 43.7144 36.3019 38.5604 36.2095 31.8579V22.3242C36.2095 15.3675 37.4691 10.0518 39.9883 6.37695C42.5075 2.67904 46.1245 0.830078 50.8394 0.830078C55.5542 0.830078 59.1712 2.65592 61.6904 6.30762C64.2096 9.95931 65.4924 15.1711 65.5386 21.9429V31.1299ZM55.6929 20.9028C55.6929 16.9276 55.3 13.9461 54.5142 11.9585C53.7284 9.97087 52.5034 8.97705 50.8394 8.97705C47.7192 8.97705 46.1014 12.6172 45.9858 19.8975V32.4819C45.9858 36.5496 46.3787 39.5773 47.1646 41.5649C47.9735 43.5526 49.2215 44.5464 50.9087 44.5464C52.5034 44.5464 53.6821 43.6219 54.4448 41.7729C55.2306 39.9009 55.6466 37.0465 55.6929 33.21V20.9028ZM101.455 31.1299C101.455 38.1097 100.183 43.4486 97.6411 47.1465C95.1219 50.8444 91.5164 52.6934 86.8247 52.6934C82.1792 52.6934 78.5853 50.9022 76.043 47.3198C73.5238 43.7144 72.2179 38.5604 72.1255 31.8579V22.3242C72.1255 15.3675 73.3851 10.0518 75.9043 6.37695C78.4235 2.67904 82.0405 0.830078 86.7554 0.830078C91.4702 0.830078 95.0872 2.65592 97.6064 6.30762C100.126 9.95931 101.408 15.1711 101.455 21.9429V31.1299ZM91.6089 20.9028C91.6089 16.9276 91.216 13.9461 90.4302 11.9585C89.6444 9.97087 88.4194 8.97705 86.7554 8.97705C83.6353 8.97705 82.0174 12.6172 81.9019 19.8975V32.4819C81.9019 36.5496 82.2948 39.5773 83.0806 41.5649C83.8895 43.5526 85.1375 44.5464 86.8247 44.5464C88.4194 44.5464 89.5981 43.6219 90.3608 41.7729C91.1466 39.9009 91.5627 37.0465 91.6089 33.21V20.9028Z" fill="url(#paint3_linear)"></path>
+    </symbol>
+
+    <symbol id="icon_footer_fb" viewBox="0 0 12 24">
+      <path d="M11.5481 0.0049936L8.66986 0C5.43624 0 3.34653 2.31828 3.34653 5.90643V8.62969H0.452578C0.202506 8.62969 0 8.84891 0 9.11932V13.065C0 13.3354 0.202736 13.5544 0.452578 13.5544H3.34653V23.5106C3.34653 23.781 3.54904 24 3.79911 24H7.5749C7.82497 24 8.02748 23.7808 8.02748 23.5106V13.5544H11.4112C11.6613 13.5544 11.8638 13.3354 11.8638 13.065L11.8652 9.11932C11.8652 8.98948 11.8174 8.86514 11.7326 8.77326C11.6479 8.68138 11.5324 8.62969 11.4123 8.62969H8.02748V6.32115C8.02748 5.21157 8.27201 4.64829 9.60873 4.64829L11.5477 4.64755C11.7975 4.64755 12 4.42833 12 4.15817V0.494367C12 0.224462 11.7977 0.00549296 11.5481 0.0049936Z" fill="white"></path>
+    </symbol>
+    <symbol id="icon_footer_inst" viewBox="0 0 24 24">
+      <path d="M17.5034 0H6.49658C2.91431 0 0 2.91431 0 6.49658V17.5036C0 21.0857 2.91431 24 6.49658 24H17.5036C21.0857 24 24 21.0857 24 17.5036V6.49658C24 2.91431 21.0857 0 17.5034 0V0ZM12 18.5623C8.38147 18.5623 5.43768 15.6185 5.43768 12C5.43768 8.38147 8.38147 5.43768 12 5.43768C15.6185 5.43768 18.5623 8.38147 18.5623 12C18.5623 15.6185 15.6185 18.5623 12 18.5623ZM18.7192 6.98529C17.6499 6.98529 16.7802 6.11554 16.7802 5.0462C16.7802 3.97687 17.6499 3.10693 18.7192 3.10693C19.7886 3.10693 20.6585 3.97687 20.6585 5.0462C20.6585 6.11554 19.7886 6.98529 18.7192 6.98529Z" fill="white"></path>
+      <path d="M12.0001 6.84448C9.15753 6.84448 6.84473 9.1571 6.84473 11.9998C6.84473 14.8423 9.15753 17.1552 12.0001 17.1552C14.8428 17.1552 17.1554 14.8423 17.1554 11.9998C17.1554 9.1571 14.8428 6.84448 12.0001 6.84448Z" fill="white"></path>
+      <path d="M18.7186 4.51392C18.4253 4.51392 18.1865 4.75269 18.1865 5.04602C18.1865 5.33936 18.4253 5.57812 18.7186 5.57812C19.0121 5.57812 19.2509 5.33954 19.2509 5.04602C19.2509 4.7525 19.0121 4.51392 18.7186 4.51392Z" fill="white"></path>
+    </symbol>
+    <symbol id="icon_footer_vk" viewBox="0 0 24 13">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6554 8.26599C21.4515 9.00996 22.2918 9.70992 23.0058 10.5289C23.3212 10.8929 23.6199 11.2684 23.8483 11.6908C24.172 12.2912 23.8788 12.9519 23.3163 12.9878L19.82 12.9863C18.9182 13.0579 18.1988 12.7104 17.5939 12.1203C17.1098 11.6483 16.6615 11.146 16.1961 10.6581C16.0052 10.4587 15.8055 10.2711 15.5669 10.1228C15.0896 9.82623 14.6753 9.91703 14.4025 10.3935C14.1247 10.8781 14.0617 11.4148 14.0344 11.9549C13.997 12.7429 13.7481 12.9501 12.9211 12.9862C11.1537 13.066 9.47629 12.81 7.91806 11.9566C6.54426 11.2043 5.47894 10.1422 4.5517 8.93977C2.74634 6.59842 1.36379 4.02567 0.121208 1.38084C-0.158487 0.784951 0.0460603 0.465084 0.732957 0.453762C1.87358 0.432554 3.01405 0.434063 4.15601 0.452253C4.61959 0.458744 4.92649 0.713249 5.10549 1.13244C5.7226 2.58483 6.47771 3.96665 7.42553 5.24748C7.67794 5.58848 7.93532 5.92948 8.30184 6.16949C8.7073 6.43524 9.01602 6.34716 9.20677 5.91484C9.32781 5.64071 9.3808 5.34544 9.40808 5.05184C9.49845 4.04175 9.51035 3.03338 9.35186 2.02684C9.25455 1.39865 8.88488 0.991982 8.23 0.873108C7.89582 0.8125 7.94558 0.693475 8.10738 0.510898C8.38842 0.196012 8.65274 0 9.17964 0H13.1311C13.7532 0.117516 13.8913 0.385004 13.9765 0.984133L13.9799 5.18536C13.9731 5.4173 14.1009 6.10556 14.5374 6.25908C14.8867 6.36837 15.117 6.10088 15.3265 5.88887C16.2726 4.92776 16.9479 3.79192 17.5511 2.61578C17.8188 2.09861 18.049 1.56153 18.2721 1.02489C18.4373 0.626678 18.6967 0.430742 19.1653 0.439422L22.9684 0.442667C23.0811 0.442667 23.1952 0.444252 23.3044 0.46214C23.9453 0.566675 24.1209 0.830539 23.923 1.42952C23.6111 2.36927 23.0043 3.15241 22.411 3.93917C21.7768 4.77915 21.0985 5.59036 20.4696 6.43532C19.8917 7.20691 19.9376 7.59584 20.6554 8.26599Z" fill="white"></path>
+    </symbol>
+
+    <symbol id="icon_logo" viewBox="0 0 87 20">
+      <path d="M0.676 5.168C0.676 3.69467 1.03133 2.568 1.742 1.788C2.45267 0.990666 3.50133 0.592 4.888 0.592C6.27467 0.592 7.32333 0.990666 8.034 1.788C8.74467 2.568 9.1 3.69467 9.1 5.168V5.74H6.396V4.986C6.396 3.79 5.91933 3.192 4.966 3.192C4.01267 3.192 3.536 3.79 3.536 4.986C3.536 5.662 3.72667 6.30333 4.108 6.91C4.48933 7.49933 4.94867 8.03667 5.486 8.522C6.04067 9.00733 6.59533 9.51867 7.15 10.056C7.70467 10.576 8.17267 11.2347 8.554 12.032C8.93533 12.812 9.126 13.6787 9.126 14.632C9.126 16.1053 8.762 17.2407 8.034 18.038C7.306 18.818 6.24867 19.208 4.862 19.208C3.47533 19.208 2.418 18.818 1.69 18.038C0.962 17.2407 0.598 16.1053 0.598 14.632V13.514H3.302V14.814C3.302 15.9927 3.796 16.582 4.784 16.582C5.772 16.582 6.266 15.9927 6.266 14.814C6.266 14.138 6.07533 13.5053 5.694 12.916C5.31267 12.3093 4.84467 11.7633 4.29 11.278C3.75267 10.7927 3.20667 10.29 2.652 9.77C2.09733 9.23267 1.62933 8.574 1.248 7.794C0.866667 6.99667 0.676 6.12133 0.676 5.168ZM11.1546 0.799999H14.0146V14.84C14.0146 16.0187 14.5086 16.608 15.4966 16.608C16.4846 16.608 16.9786 16.0187 16.9786 14.84V0.799999H19.6826V14.658C19.6826 16.1313 19.3186 17.2667 18.5906 18.064C17.8626 18.844 16.8053 19.234 15.4186 19.234C14.0319 19.234 12.9746 18.844 12.2466 18.064C11.5186 17.2667 11.1546 16.1313 11.1546 14.658V0.799999ZM26.376 0.799999C29.2187 0.799999 30.64 2.29933 30.64 5.298V7.664C30.64 10.6627 29.2187 12.162 26.376 12.162H25.024V19H22.164V0.799999H26.376ZM26.376 3.4H25.024V9.562H26.376C26.844 9.562 27.1907 9.432 27.416 9.172C27.6587 8.912 27.78 8.47 27.78 7.846V5.116C27.78 4.492 27.6587 4.05 27.416 3.79C27.1907 3.53 26.844 3.4 26.376 3.4ZM35.3448 3.4V8.47H39.2708V11.07H35.3448V16.4H40.2848V19H32.4848V0.799999H40.2848V3.4H35.3448ZM51.469 19H48.557C48.3837 18.48 48.297 17.7347 48.297 16.764V13.904C48.297 13.072 48.1497 12.4827 47.855 12.136C47.5604 11.772 47.0837 11.59 46.425 11.59H45.437V19H42.577V0.799999H46.893C48.3664 0.799999 49.441 1.14667 50.117 1.84C50.793 2.516 51.131 3.56467 51.131 4.986V6.416C51.131 8.288 50.507 9.51867 49.259 10.108C50.5244 10.6453 51.157 11.9367 51.157 13.982V16.79C51.157 17.778 51.261 18.5147 51.469 19ZM46.815 3.4H45.437V8.99H46.555C47.127 8.99 47.5517 8.84267 47.829 8.548C48.1237 8.25333 48.271 7.75933 48.271 7.066V5.272C48.271 4.024 47.7857 3.4 46.815 3.4ZM57.848 11.46V8.86H61.852V14.632C61.852 16.1053 61.488 17.2407 60.76 18.038C60.032 18.818 58.9746 19.208 57.588 19.208C56.2013 19.208 55.144 18.818 54.416 18.038C53.688 17.2407 53.324 16.1053 53.324 14.632V5.168C53.324 3.69467 53.688 2.568 54.416 1.788C55.144 0.990666 56.2013 0.592 57.588 0.592C58.9746 0.592 60.032 0.990666 60.76 1.788C61.488 2.568 61.852 3.69467 61.852 5.168V6.936H59.148V4.986C59.148 3.79 58.654 3.192 57.666 3.192C56.678 3.192 56.184 3.79 56.184 4.986V14.814C56.184 15.9927 56.678 16.582 57.666 16.582C58.654 16.582 59.148 15.9927 59.148 14.814V11.46H57.848ZM66.506 19V12.968L62.892 0.799999H65.882L68.066 9.094L70.25 0.799999H72.98L69.366 12.968V19H66.506ZM78.6086 0.799999L80.7146 13.722L82.6646 0.799999H86.6426V19H83.9386V5.948L81.9626 19H79.2586L77.1266 6.13V19H74.6306V0.799999H78.6086Z" fill="white"></path>
+    </symbol>
+  </svg>
+  <main>
+    <section class="description">
+      <header class="description__wrap_block_header">
+        <a><svg width="89" height="20" class="description__header_logo"><use xlink:href="#icon_logo"></use></svg></a>
+        <div class="description__header_phone">
+          <a href="tel:+78005555555" class="description__header_tel" tabindex="0">8-800-555-55-55</a>
+        </div>
+      </header>
+      <div class="description__wrap_block_description">
+        <div class="description__text">
+          <p>Омск</p>
+          <h1>Фитнес центр</h1>
+          <div class="description__block_text_description">
+            <span>Тренажёрный зал</span>
+            <span>Групповые занятия</span>
+            <span>Кардио-зона</span>
+          </div>
+          <a href="#subscription">Купить абонемент</a>
+        </div>
+        <div class="description__img">
+          <picture>
+              <!-- 1x 324px 2x 648px -->
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/image/description/superman_img_tablet.webp 1x, ./img/image/description/superman_img_tablet@2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="./img/image/description/superman_img_tablet.jpg 1x, ./img/image/description/superman_img_tablet@2x.jpg 2x">
+              <!-- 1x 500px 2x 1000px -->
+            <source type="image/webp" srcset="./img/image/description/superman_img_desc.webp 1x, ./img/image/description/superman_img_desc@2x.webp 2x">
+            <img src="./img/image/description/superman_img_desc.jpg" srcset="./img/image/description/superman_img_desc@2x.jpg 2x" alt="фотография человека в фублоке Super Man" width="500" height="556">
+          </picture>
+        </div>
+        <div class="description__social">
+          <a href="#">fb</a>
+          <a href="#">vk</a>
+          <a href="#">ig</a>
+        </div>
+      </div>
+    </section>
+    <section class="trainers">
+      <div class="trainers__wrap">
+        <div class="trainers__block_text">
+          <h2>Тренажерный зал</h2>
+          <p>Просторный зал площадью 900 кв/м</p>
+          <div class="trainers__block_description">
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+        </div>
+        <div class="trainers__block_img">
+          <picture>
+              <!-- 1x 320px 2x 640px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/image/trainers/trainers_img_mobile.webp 1x, ./img/image/trainers/trainers_img_mobile@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="./img/image/trainers/trainers_img_mobile.jpg 1x, ./img/image/trainers/trainers_img_mobile@2x.jpg 2x">
+              <!-- 1x 364px 2x 1356px -->
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/image/trainers/trainers_img_tablet.webp 1x, ./img/image/trainers/trainers_img_tablet@2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="./img/image/trainers/trainers_img_tablet.jpg 1x, ./img/image/trainers/trainers_img_tablet@2x.jpg 2x">
+              <!-- 1x 660px 2x 1320px -->
+            <source type="image/webp" srcset="./img/image/trainers/trainers_img_desc.webp 1x, ./img/image/trainers/trainers_img_desc@2x.webp 2x">
+            <img src="./img/image/trainers/trainers_img_desc.jpg" srcset="./img/image/trainers/trainers_img_desc@2x.jpg 2x" alt="изображение тренажерного зала" width="660" height="401">
+          </picture>
+        </div>
+        <div class="trainers__block_video">
+          <video width="364" height="228" poster="./img/image/trainers/trainers_img_video.png"></video>
+          <button type="button" class="trainers__video_play" tabindex="0">Кнопка плей<svg width="100" height="100" class="trainers__play_icon"><use xlink:href="#icon_trainers_video"></use></svg></button>
+        </div>
+      </div>
+    </section>
+    <section class="subscription" id="subscription">
+      <div class="subscription__wrap">
+        <div class="subscription__title">
+          <h2>Абонементы</h2>
+        </div>
+        <div class="subscription__tabs_control">
+          <span class="subscription__tab_control subscription__tab_control--active" tabindex="0">1 месяц</span>
+          <span class="subscription__tab_control" tabindex="0">6 месяцев</span>
+          <span class="subscription__tab_control" tabindex="0">12 месяцев</span>
+        </div>
+
+        <div class="subscription__tabs subscription__tabs--active">
+          <div class="subscription__tab">
+            <h3>С тренером</h3>
+            <p>12 занятий</p>
+            <span>5000 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>5000</span>
+            <a class="subscription__tab_link" href="#" tabindex="0">купить абонемент</a>
+          </div>
+          <div class="subscription__tab">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <span>1700 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>1700</span>
+            <a class="subscription__tab_link" href="#" tabindex="0">купить абонемент</a>
+          </div>
+          <div class="subscription__tab">
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <span>2700 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>2700</span>
+            <a class="subscription__tab_link" href="#" tabindex="0">купить абонемент</a>
+          </div>
+        </div>
+
+        <div class="subscription__tabs">
+          <div class="subscription__tab" tabindex="0">
+            <h3>С тренером</h3>
+            <p>12 занятий</p>
+            <span>4000 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>4000</span>
+            <a class="subscription__tab_link" href="#">купить абонемент</a>
+          </div>
+          <div class="subscription__tab" tabindex="0">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <span>1500 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>1500</span>
+            <a class="subscription__tab_link" href="#">купить абонемент</a>
+          </div>
+          <div class="subscription__tab" tabindex="0">
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <span>2500 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>2500</span>
+            <a class="subscription__tab_link" href="#">купить абонемент</a>
+          </div>
+        </div>
+
+        <div class="subscription__tabs">
+          <div class="subscription__tab" tabindex="0">
+            <h3>С тренером</h3>
+            <p>12 занятий</p>
+            <span>3000 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>3000</span>
+            <a class="subscription__tab_link" href="#">купить абонемент</a>
+          </div>
+          <div class="subscription__tab" tabindex="0">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <span>1300 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>1300</span>
+            <a class="subscription__tab_link" href="#">купить абонемент</a>
+          </div>
+          <div class="subscription__tab" tabindex="0">
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <span>2300 <svg width="30" height="42"><use xlink:href="#icon_subscription_rub"></use></svg></span>
+            <span>2300</span>
+            <a class="subscription__tab_link" href="#">купить абонемент</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="promo__wrap">
+        <div class="promo__block_text">
+          <div class="promo__title">
+            <h3>SUPER GAMES</h3>
+          </div>
+          <div class="promo__schedule">
+            <div class="promo__date">
+              <div class="promo__date_title">
+                <h4>Дата</h4>
+              </div>
+              <div class="promo__date_text">
+                <span>7</span>
+                <span>Марта 2019</span>
+              </div>
+            </div>
+            <div class="promo__time">
+              <div class="promo__time_title">
+                <h4>Время</h4>
+              </div>
+              <div class="promo__time_text">
+                <span>12:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="promo__description">
+            <span>Ежегодные соревнования по CrossFit</span>
+          </div>
+          <div class="promo__link">
+            <a href="application.html">заполнить заявку</a>
+          </div>
+        </div>
+        <div class="promo__block_img">
+          <picture>
+              <!-- 1x 290px 2x 580px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/image/promo/promo_img_mobile.webp 1x, ./img/image/promo/promo_img_mobile@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="./img/image/promo/promo_img_mobile.jpg 1x, ./img/image/promo/promo_img_mobile@2x.jpg 2x">
+              <!-- 1x 386px 2x 772px -->
+            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/image/promo/promo_img_tablet.webp 1x, ./img/image/promo/promo_img_tablet@2x.webp 2x">
+            <source media="(max-width: 1199px)" srcset="./img/image/promo/promo_img_tablet.jpg 1x, ./img/image/promo/promo_img_tablet@2x.jpg 2x">
+              <!-- 1x 660px 2x 1320px -->
+            <source type="image/webp" srcset="./img/image/promo/promo_img_deck.webp 1x, ./img/image/promo/promo_img_deck@2x.webp 2x">
+            <img src="./img/image/promo/promo_img_deck.jpg" srcset="./img/image/promo/promo_img_deck@2x.jpg 2x" alt="Фотография спортсмена" width="660" height="500">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="coaches" id="coaches">
+      <div class="coaches__wrap">
+        <div class="coaches__title">
+          <h3>Тренеры</h3>
+        </div>
+        <div class="coaches__slider_control">
+          <button type="button" class="coaches__button_next">Вперед</button>
+          <button type="button" class="coaches__button_back">Назад</button>
+        </div>
+        <div class="coaches__slider_block">
+          <div class="coaches__sliders">
+            <div class="coaches__slider_item">
+              <picture>
+                  <!-- 1x 260px 2x 520px -->
+                <source type="image/webp" srcset="./img/image/coaches/coaches_img_one.webp 1x, ./img/image/coaches/coaches_img_one@2x.webp 2x">
+                <img src="./img/image/coaches/coaches_img_one.jpg" srcset="./img/image/coaches/coaches_img_one@2x.jpg 2x" alt="фото тренера" width="260" height="294">
+              </picture>
+              <div class="coaches__slider_description">
+                <h4>Анна Павлова</h4>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coaches__slider_item">
+              <picture>
+                  <!-- 1x 260px 2x 520px -->
+                <source type="image/webp" srcset="./img/image/coaches/coaches_img_two.webp 1x, ./img/image/coaches/coaches_img_two@2x.webp 2x">
+                <img src="./img/image/coaches/coaches_img_two.jpg" srcset="./img/image/coaches/coaches_img_two@2x.jpg 2x" alt="фото тренера" width="260" height="294">
+              </picture>
+              <div class="coaches__slider_description">
+                <h4>Алексей Лавров</h4>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coaches__slider_item">
+              <picture>
+                  <!-- 1x 260px 2x 520px -->
+                <source type="image/webp" srcset="./img/image/coaches/coaches_img_three.webp 1x, ./img/image/coaches/coaches_img_three@2x.webp 2x">
+                <img src="./img/image/coaches/coaches_img_three.jpg" srcset="./img/image/coaches/coaches_img_three@2x.jpg 2x" alt="фото тренера" width="260" height="294">
+              </picture>
+              <div class="coaches__slider_description">
+                <h4>Александр Пашков</h4>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coaches__slider_item">
+              <picture>
+                  <!-- 1x 260px 2x 520px -->
+                <source type="image/webp" srcset="./img/image/coaches/coaches_img_four.webp 1x, ./img/image/coaches/coaches_img_four@2x.webp 2x">
+                <img src="./img/image/coaches/coaches_img_four.jpg" srcset="./img/image/coaches/coaches_img_four@2x.jpg 2x" alt="фото тренера" width="260" height="294">
+              </picture>
+              <div class="coaches__slider_description">
+                <h4>Мария Кетова</h4>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coaches__slider_item">
+              <picture>
+                  <!-- 1x 260px 2x 520px -->
+                <source type="image/webp" srcset="./img/image/coaches/coaches_img_two.webp 1x, ./img/image/coaches/coaches_img_two@2x.webp 2x">
+                <img src="./img/image/coaches/coaches_img_two.jpg" srcset="./img/image/coaches/coaches_img_two@2x.jpg 2x" alt="фото тренера" width="260" height="294">
+              </picture>
+              <div class="coaches__slider_description">
+                <h4>Алексей Лавров</h4>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coaches__slider_item">
+              <picture>
+                  <!-- 1x 260px 2x 520px -->
+                <source type="image/webp" srcset="./img/image/coaches/coaches_img_four.webp 1x, ./img/image/coaches/coaches_img_four@2x.webp 2x">
+                <img src="./img/image/coaches/coaches_img_four.jpg" srcset="./img/image/coaches/coaches_img_four@2x.jpg 2x" alt="фото тренера" width="260" height="294">
+              </picture>
+              <div class="coaches__slider_description">
+                <h4>Мария Кетова</h4>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coaches__slider_item">
+              <picture>
+                  <!-- 1x 260px 2x 520px -->
+                <source type="image/webp" srcset="./img/image/coaches/coaches_img_three.webp 1x, ./img/image/coaches/coaches_img_three@2x.webp 2x">
+                <img src="./img/image/coaches/coaches_img_three.jpg" srcset="./img/image/coaches/coaches_img_three@2x.jpg 2x" alt="фото тренера" width="260" height="294">
+              </picture>
+              <div class="coaches__slider_description">
+                <h4>Александр Пашков</h4>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+            <div class="coaches__slider_item">
+              <picture>
+                  <!-- 1x 260px 2x 520px -->
+                <source type="image/webp" srcset="./img/image/coaches/coaches_img_one.webp 1x, ./img/image/coaches/coaches_img_one@2x.webp 2x">
+                <img src="./img/image/coaches/coaches_img_one.jpg" srcset="./img/image/coaches/coaches_img_one@2x.jpg 2x" alt="фото тренера" width="260" height="294">
+              </picture>
+              <div class="coaches__slider_description">
+                <h4>Анна Павлова</h4>
+                <span>CrossFit</span>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit </li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrap">
+        <div class="advantages__title">
+          <h3>Наши преимущества</h3>
+        </div>
+        <div class="advantages__block_advantages">
+          <div class="advantages__double_advantages">
+            <div class="advantages__advantage">
+              <div class="advantages__block_number">
+                <p><svg width="108" height="49" class="advantages__advantage_icon"><use xlink:href="#icon_advantages_900"></use></svg></p>
+                <span>кв/м</span>
+              </div>
+              <div class="advantages__block_text">
+                <span>Площадь</span>
+                <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+              </div>
+            </div>
+            <div class="advantages__advantage">
+              <div class="advantages__block_number">
+                <p><svg width="72" height="49" class="advantages__advantage_icon"><use xlink:href="#icon_advantages_70"></use></svg></p>
+                <span>машин</span>
+              </div>
+              <div class="advantages__block_text">
+                <span>Собственная парковка</span>
+                <p>Вы всегда найдете место для своей&nbsp;машины на нашей парковке</p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__single_advantage">
+            <span>100</span>
+            <span>Тренажеров</span>
+            <p>Современные тренажеры на все группы мышц</p>
+          </div>
+          <div class="advantages__double_advantages">
+            <div class="advantages__advantage">
+              <div class="advantages__block_number">
+                <p><svg width="108" height="49" class="advantages__advantage_icon icon"><use xlink:href="#icon_advantages_350"></use></svg></p>
+                <span>мест</span>
+              </div>
+              <div class="advantages__block_text">
+                <span>Комфорт</span>
+                <p>Просторные раздевалки,
+                  душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </div>
+            <div class="advantages__advantage">
+              <div class="advantages__block_number">
+                <p><svg width="70" height="49" class="advantages__advantage_icon"><use xlink:href="#icon_advantages_5"></use></svg></p>
+                <span>лет</span>
+              </div>
+              <div class="advantages__block_text">
+                <span>Тренерский опыт</span>
+                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stocks" id="stocks">
+      <div class="stocks__wrap">
+        <div class="stocks__title">
+          <h3>Акции</h3>
+        </div>
+        <div class="stocks__block_stock">
+          <div class="stocks__main_stock">
+            <div class="stocks__main_text">
+              <h5>Год</h5>
+              <h4>4999</h4>
+              <p>Безлимитный абонемент в тренажерный зал</p>
+              <a href="#">подробнее</a>
+            </div>
+            <div class="stocks__main_image">
+              <picture>
+                  <!-- 1x 290px 2x 580px -->
+                <source media="(max-width: 767px)" type="image/webp" srcset="./img/image/stocks/stocks_img_mobile.webp 1x, ./img/image/stocks/stocks_img_mobile@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="./img/image/stocks/stocks_img_mobile.jpg 1x, ./img/image/stocks/stocks_img_mobile@2x.jpg 2x">
+                  <!-- 1x 399px 2x 798px -->
+                <source media="(max-width: 1199px)" type="image/webp" srcset="./img/image/stocks/stocks_img_tablet.webp 1x, ./img/image/stocks/stocks_img_tablet@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="./img/image/stocks/stocks_img_tablet.jpg 1x, ./img/image/stocks/stocks_img_tablet@2x.jpg 2x">
+                  <!-- 1x 280px 2x 560px -->
+                <source type="image/webp" srcset="./img/image/stocks/stocks_img_desctop.webp 1x, ./img/image/stocks/stocks_img_desctop@2x.webp 2x">
+                <img src="./img/image/stocks/stocks_img_desctop.jpg" srcset="./img/image/stocks/stocks_img_desctop@2x.jpg 2x" alt="рекламное изображение" width="280" height="462">
+              </picture>
+            </div>
+          </div>
+          <div class="stocks__description_stock">
+            <div class="stocks__description_one">
+              <h4>Месяц бесплатно</h4>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a href="#">подробнее</a>
+            </div>
+            <div class="stocks__description_two">
+              <h4>Скидка 20%</h4>
+              <p>Корпоративный фитнес  с командой</p>
+              <a href="#">подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrap">
+        <div class="reviews__title">
+          <h3>Отзывы</h3>
+        </div>
+        <div class="reviews__slider_control">
+          <button type="button" class="reviews__button_next">Вперед</button>
+          <button type="button" class="reviews__button_back">Назад</button>
+        </div>
+        <div class="reviews__slider_block">
+          <div class="reviews__sliders">
+            <div class="reviews__slider_item">
+              <div class="reviews__slider_img">
+                <picture>
+                    <!-- 1x 68px 2x 136px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="./img/image/reviews/reviews_photo_mobile.webp 1x, ./img/image/reviews/reviews_photo_mobile@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/image/reviews/reviews_photo_mobile.jpg 1x, ./img/image/reviews/reviews_photo_mobile@2x.jpg 2x">
+                    <!-- 1x 80px 2x 160px -->
+                  <source media="(max-width: 1199px)" type="image/webp" srcset="./img/image/reviews/reviews_photo_tablet.webp 1x, ./img/image/reviews/reviews_photo_tablet@2x.webp 2x">
+                  <source media="(max-width: 1199px)" srcset="./img/image/reviews/reviews_photo_tablet.jpg 1x, ./img/image/reviews/reviews_photo_tablet@2x.jpg 2x">
+                    <!-- 1x 80px 2x 160px -->
+                  <source type="image/webp" srcset="./img/image/reviews/reviews_photo_desctop.webp 1x, ./img/image/reviews/reviews_photo_desctop@2x.webp 2x">
+                  <img src="./img/image/reviews/reviews_photo_desctop.jpg" srcset="./img/image/reviews/reviews_photo_desctop@2x.jpg 2x" alt="фото рецензента" width="80" height="80">
+                </picture>
+              </div>
+              <div class="reviews__slider_text">
+                <h4>Анна Орлова</h4>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
+            <div class="reviews__slider_item">
+              <div class="reviews__slider_img">
+                <picture>
+                    <!-- 1x 68px 2x 136px -->
+                  <source media="(max-width: 767px)" type="image/webp" srcset="./img/image/reviews/reviews_photo_mobile.webp 1x, ./img/image/reviews/reviews_photo_mobile@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/image/reviews/reviews_photo_mobile.jpg 1x, ./img/image/reviews/reviews_photo_mobile@2x.jpg 2x">
+                    <!-- 1x 80px 2x 160px -->
+                  <source media="(max-width: 1199px)" type="image/webp" srcset="./img/image/reviews/reviews_photo_tablet.webp 1x, ./img/image/reviews/reviews_photo_tablet@2x.webp 2x">
+                  <source media="(max-width: 1199px)" srcset="./img/image/reviews/reviews_photo_tablet.jpg 1x, ./img/image/reviews/reviews_photo_tablet@2x.jpg 2x">
+                    <!-- 1x 80px 2x 160px -->
+                  <source type="image/webp" srcset="../img/image/reviews/reviews_photo_desctop.webp 1x, ./img/image/reviews/reviews_photo_desctop@2x.webp 2x">
+                  <img src="./img/image/reviews/reviews_photo_desctop.jpg" srcset="./img/image/reviews/reviews_photo_desctop@2x.jpg 2x" alt="фото рецензента" width="80" height="80">
+                </picture>
+              </div>
+              <div class="reviews__slider_text">
+                <h4>Нина Иванова</h4>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrap">
+        <div class="contacts__block_feedback">
+          <div class="contacts__feedback_title"><h3>БЕСПЛАТНОЕ занятие</h3></div>
+          <form action="index.html" method="POST">
+            <div class="contacts__feedback_block_input">
+              <label for="name" class="visually-hidden">Введите ваше имя</label>
+              <input type="text" name="name" id="name" placeholder="Имя" required="">
+              <label for="phone" class="visually-hidden">Введите ваш телефон</label>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" required="">
+            </div>
+            <button type="submit" class="contacts__feedback_submit">Отправить</button>
+          </form>
+        </div>
+        <div class="contacts__block_address">
+          <div class="contacts__address_title"><h3>Контакты</h3></div>
+          <div class="contacts__address_block_text">
+            <div class="contacts__address_block_location">
+              <div class="contacts__address_location">
+                <h4>Адрес:</h4>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              </div>
+              <div class="contacts__address_schedule">
+                <h4>График работы:</h4>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+            </div>
+            <div class="contacts__address_block_communication">
+              <div class="contacts__address_phone">
+                <h4>Телефон:</h4>
+                <a href="tel:+78005555555">8-800-555-55-55</a>
+              </div>
+              <div class="contacts__address_email">
+                <h4>Email:</h4>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrap">
+      <div class="footer__logo">
+        <a>Supergym</a>
+      </div>
+      <div class="footer__link">
+        <a href="#" class="footer__link_services">Услуги</a>
+        <a href="#subscription" class="footer__link_season">Абонементы</a>
+        <a href="#stocks" class="footer__link_stocks">Акции</a>
+        <a href="#coaches" class="footer__link_coaches">Тренеры</a>
+        <a href="#" class="footer__link_schedule">Расписание</a>
+      </div>
+      <div class="footer__social">
+        <a href="#">Ссылка на Вконтакте<svg width="25" height="14" class="footer__social_icon"><use xlink:href="#icon_footer_vk"></use></svg></a>
+        <a href="#">Ссылка на инстаграм<svg width="24" height="24" class="footer__social_icon"><use xlink:href="#icon_footer_inst"></use></svg></a>
+        <a href="#">Ссылка на фэйсбук<svg width="12" height="24" class="footer__social_icon"><use xlink:href="#icon_footer_fb"></use></svg></a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/vendor.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
