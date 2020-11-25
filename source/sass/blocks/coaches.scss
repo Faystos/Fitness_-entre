@@ -2,8 +2,8 @@
   width: 100%;
   padding-top: 55px;
   padding-bottom: 120px;
-  padding-left: 2.5px;
-  padding-right: 2.5px;
+  padding-left: 7px;
+  padding-right: 7px;
 
   .coaches__wrap {
     max-width: 1272px;
@@ -156,6 +156,12 @@
       }
     }
   }
+
+  @media (max-width: 1280px) {
+  .coaches__slider_block {
+    width: 1140px;
+  }
+}
 
   @media (max-width: $desktop-width) {
     padding-top: 37px;

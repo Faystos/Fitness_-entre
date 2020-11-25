@@ -1054,8 +1054,8 @@ a {
   width: 100%;
   padding-top: 55px;
   padding-bottom: 120px;
-  padding-left: 2.5px;
-  padding-right: 2.5px; }
+  padding-left: 7px;
+  padding-right: 7px; }
   .coaches .coaches__wrap {
     max-width: 1272px;
     margin: 0 auto;
@@ -1188,6 +1188,9 @@ a {
         border-radius: 50%;
         top: 7px;
         left: -16px; }
+  @media (max-width: 1280px) {
+    .coaches .coaches__slider_block {
+      width: 1140px; } }
   @media (max-width: 1199px) {
     .coaches {
       padding-top: 37px;
