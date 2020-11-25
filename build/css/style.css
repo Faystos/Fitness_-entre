@@ -1123,12 +1123,12 @@ a {
     left: 4px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    margin-left: 2px; }
+    margin-left: 1px; }
   .coaches .coaches__button_next {
     right: 4px;
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
-    margin-right: 2px; }
+    margin-right: 1px; }
   .coaches .coaches__slider_item {
     -ms-flex-negative: 0;
         flex-shrink: 0;
