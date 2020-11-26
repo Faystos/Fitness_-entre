@@ -18,7 +18,3 @@ class DetectIos {
 
 new DetectIos('description__text h1');
 })();
-
-
-
-

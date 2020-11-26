@@ -265,7 +265,8 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 20px 103px 28px;
-    overflow: hidden; }
+    position: relative;
+    z-index: 9999; }
     .description .description__wrap_block_header a {
       font-family: "Bebas", "Tahoma", sans-serif;
       font-size: 26px;
@@ -281,7 +282,16 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 4px; }
+    position: absolute;
+    top: 24px;
+    right: 104px;
+    min-height: 28px;
+    z-index: 9999; }
+    @media (max-width: 1265px) {
+      .description .description__header_phone {
+        position: static;
+        margin-top: 4px;
+        margin-bottom: 4px; } }
     .description .description__header_phone a {
       margin-top: 4px; }
       .description .description__header_phone a:hover, .description .description__header_phone a:focus {

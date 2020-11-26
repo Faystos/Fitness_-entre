@@ -12,11 +12,14 @@
   .description__wrap_block_header {
     max-width: 1366px;
     margin: 0 auto -31px;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 103px 28px;
-    overflow: hidden;
+    // overflow: hidden;
+    position: relative;
+    z-index: 9999;
 
     a {
       font-family: $title-font;
@@ -31,7 +34,17 @@
   .description__header_phone {
     display: flex;
     flex-direction: column;
-    margin-top: 4px;
+    position: absolute;
+    top: 24px;
+    right: 104px;
+    min-height: 28px;
+    z-index: 9999;
+
+    @media (max-width: 1265px) {
+      position: static;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
 
     a {
       margin-top: 4px;
